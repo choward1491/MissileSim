@@ -1,0 +1,561 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD9A74E41CCD2BFA00615C78 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD9A74E31CCD2BFA00615C78 /* main.cpp */; };
+		AD9A74EC1CCD2C3100615C78 /* Atmosphere.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD9A74EA1CCD2C3100615C78 /* Atmosphere.cpp */; };
+		AD9A74EF1CCD2C4400615C78 /* Gravity84.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD9A74ED1CCD2C4400615C78 /* Gravity84.cpp */; };
+		AD9A74F21CCD2C5100615C78 /* Earth.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD9A74F01CCD2C5100615C78 /* Earth.cpp */; };
+		AD9A74FA1CCD2C8600615C78 /* LatLongAlt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD9A74F81CCD2C8600615C78 /* LatLongAlt.cpp */; };
+		AD9A74FD1CCD2C9A00615C78 /* CoordTransforms.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD9A74FB1CCD2C9A00615C78 /* CoordTransforms.cpp */; };
+		AD9A75811CCD43C000615C78 /* libSpektr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD9A75801CCD43C000615C78 /* libSpektr.a */; };
+		AD9A758F1CCD46BB00615C78 /* MissileSim.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD9A758D1CCD46BB00615C78 /* MissileSim.cpp */; };
+		AD9A75931CCD472800615C78 /* MissileModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD9A75911CCD472800615C78 /* MissileModel.cpp */; };
+		AD9A75A01CCD6DF600615C78 /* EquationsOfMotion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD9A759E1CCD6DF600615C78 /* EquationsOfMotion.cpp */; };
+		AD9A75A61CCF257300615C78 /* TargetModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD9A75A41CCF257300615C78 /* TargetModel.cpp */; };
+		AD9A75AD1CCF29E600615C78 /* RocketMotor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD9A75AB1CCF29E600615C78 /* RocketMotor.cpp */; };
+		AD9A75B91CD526F700615C78 /* MassPropertiesImpl.hpp in Sources */ = {isa = PBXBuildFile; fileRef = AD9A75B71CD526F700615C78 /* MassPropertiesImpl.hpp */; };
+		AD9A75BD1CD6C9F400615C78 /* MissileMassProps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD9A75BB1CD6C9F400615C78 /* MissileMassProps.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AD9A74D51CCD29B900615C78 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AD9A74D71CCD29B900615C78 /* MissileSim */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MissileSim; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD9A74E31CCD2BFA00615C78 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../../src/main.cpp; sourceTree = "<group>"; };
+		AD9A74EA1CCD2C3100615C78 /* Atmosphere.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Atmosphere.cpp; path = ../../../src/Planetary/Earth/Atmosphere/Atmosphere.cpp; sourceTree = "<group>"; };
+		AD9A74EB1CCD2C3100615C78 /* Atmosphere.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Atmosphere.hpp; path = ../../../src/Planetary/Earth/Atmosphere/Atmosphere.hpp; sourceTree = "<group>"; };
+		AD9A74ED1CCD2C4400615C78 /* Gravity84.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Gravity84.cpp; path = ../../../src/Planetary/Earth/Gravity/Gravity84.cpp; sourceTree = "<group>"; };
+		AD9A74EE1CCD2C4400615C78 /* Gravity84.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Gravity84.hpp; path = ../../../src/Planetary/Earth/Gravity/Gravity84.hpp; sourceTree = "<group>"; };
+		AD9A74F01CCD2C5100615C78 /* Earth.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Earth.cpp; path = ../../../src/Planetary/Earth/Earth.cpp; sourceTree = "<group>"; };
+		AD9A74F11CCD2C5100615C78 /* Earth.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Earth.hpp; path = ../../../src/Planetary/Earth/Earth.hpp; sourceTree = "<group>"; };
+		AD9A74F81CCD2C8600615C78 /* LatLongAlt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LatLongAlt.cpp; path = ../../../src/Units/LatLong/LatLongAlt.cpp; sourceTree = "<group>"; };
+		AD9A74F91CCD2C8600615C78 /* LatLongAlt.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = LatLongAlt.hpp; path = ../../../src/Units/LatLong/LatLongAlt.hpp; sourceTree = "<group>"; };
+		AD9A74FB1CCD2C9A00615C78 /* CoordTransforms.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CoordTransforms.cpp; path = ../../../src/Units/Conversions/CoordTransforms.cpp; sourceTree = "<group>"; };
+		AD9A74FC1CCD2C9A00615C78 /* CoordTransforms.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = CoordTransforms.hpp; path = ../../../src/Units/Conversions/CoordTransforms.hpp; sourceTree = "<group>"; };
+		AD9A75801CCD43C000615C78 /* libSpektr.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSpektr.a; path = "../../../../../../../Library/Developer/Xcode/DerivedData/MissileSim-axgijaryzunddxfmdxklusttqdwc/Build/Products/Release/libSpektr.a"; sourceTree = "<group>"; };
+		AD9A758D1CCD46BB00615C78 /* MissileSim.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MissileSim.cpp; path = ../../../src/Simulation/MissileSim.cpp; sourceTree = "<group>"; };
+		AD9A758E1CCD46BB00615C78 /* MissileSim.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = MissileSim.hpp; path = ../../../src/Simulation/MissileSim.hpp; sourceTree = "<group>"; };
+		AD9A75911CCD472800615C78 /* MissileModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MissileModel.cpp; path = ../../../src/Models/Missile/MissileModel.cpp; sourceTree = "<group>"; };
+		AD9A75921CCD472800615C78 /* MissileModel.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = MissileModel.hpp; path = ../../../src/Models/Missile/MissileModel.hpp; sourceTree = "<group>"; };
+		AD9A759E1CCD6DF600615C78 /* EquationsOfMotion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EquationsOfMotion.cpp; path = ../../../src/Models/EquationsOfMotion/EquationsOfMotion.cpp; sourceTree = "<group>"; };
+		AD9A759F1CCD6DF600615C78 /* EquationsOfMotion.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = EquationsOfMotion.hpp; path = ../../../src/Models/EquationsOfMotion/EquationsOfMotion.hpp; sourceTree = "<group>"; };
+		AD9A75A21CCD8BE700615C78 /* ForceContributor.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = ForceContributor.hpp; path = ../../../src/Models/Contributors/ForceContributor.hpp; sourceTree = "<group>"; };
+		AD9A75A31CCD8C5E00615C78 /* MomentContributor.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = MomentContributor.hpp; path = ../../../src/Models/Contributors/MomentContributor.hpp; sourceTree = "<group>"; };
+		AD9A75A41CCF257300615C78 /* TargetModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TargetModel.cpp; path = ../../../src/Models/TargetModel/TargetModel.cpp; sourceTree = "<group>"; };
+		AD9A75A51CCF257300615C78 /* TargetModel.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = TargetModel.hpp; path = ../../../src/Models/TargetModel/TargetModel.hpp; sourceTree = "<group>"; };
+		AD9A75AB1CCF29E600615C78 /* RocketMotor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RocketMotor.cpp; path = ../../../src/Models/RocketMotor/RocketMotor.cpp; sourceTree = "<group>"; };
+		AD9A75AC1CCF29E600615C78 /* RocketMotor.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = RocketMotor.hpp; path = ../../../src/Models/RocketMotor/RocketMotor.hpp; sourceTree = "<group>"; };
+		AD9A75B71CD526F700615C78 /* MassPropertiesImpl.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = MassPropertiesImpl.hpp; path = ../../../src/Models/MassProperties/MassPropertiesImpl.hpp; sourceTree = "<group>"; };
+		AD9A75B81CD526F700615C78 /* MassProperties.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = MassProperties.hpp; path = ../../../src/Models/MassProperties/MassProperties.hpp; sourceTree = "<group>"; };
+		AD9A75BB1CD6C9F400615C78 /* MissileMassProps.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MissileMassProps.cpp; path = ../../../src/Models/MassProperties/MissileMassProps.cpp; sourceTree = "<group>"; };
+		AD9A75BC1CD6C9F400615C78 /* MissileMassProps.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = MissileMassProps.hpp; path = ../../../src/Models/MassProperties/MissileMassProps.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD9A74D41CCD29B900615C78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD9A75811CCD43C000615C78 /* libSpektr.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD9A74CE1CCD29B900615C78 = {
+			isa = PBXGroup;
+			children = (
+				AD9A74D91CCD29B900615C78 /* MissileSim */,
+				AD9A757F1CCD43A500615C78 /* libs */,
+				AD9A74D81CCD29B900615C78 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD9A74D81CCD29B900615C78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD9A74D71CCD29B900615C78 /* MissileSim */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD9A74D91CCD29B900615C78 /* MissileSim */ = {
+			isa = PBXGroup;
+			children = (
+				AD9A75901CCD46FD00615C78 /* Models */,
+				AD9A758C1CCD468500615C78 /* Simulation */,
+				AD9A74E51CCD2C0300615C78 /* Units */,
+				AD9A74E31CCD2BFA00615C78 /* main.cpp */,
+			);
+			path = MissileSim;
+			sourceTree = "<group>";
+		};
+		AD9A74E51CCD2C0300615C78 /* Units */ = {
+			isa = PBXGroup;
+			children = (
+				AD9A74F71CCD2C7500615C78 /* LatLong */,
+				AD9A74F61CCD2C6900615C78 /* CoordTransforms */,
+			);
+			name = Units;
+			sourceTree = "<group>";
+		};
+		AD9A74E61CCD2C0900615C78 /* Planetary */ = {
+			isa = PBXGroup;
+			children = (
+				AD9A74E71CCD2C1000615C78 /* Earth */,
+			);
+			name = Planetary;
+			sourceTree = "<group>";
+		};
+		AD9A74E71CCD2C1000615C78 /* Earth */ = {
+			isa = PBXGroup;
+			children = (
+				AD9A75A91CCF27CB00615C78 /* Wind */,
+				AD9A74F01CCD2C5100615C78 /* Earth.cpp */,
+				AD9A74F11CCD2C5100615C78 /* Earth.hpp */,
+				AD9A74E91CCD2C1900615C78 /* Gravity */,
+				AD9A74E81CCD2C1400615C78 /* Atmosphere */,
+			);
+			name = Earth;
+			sourceTree = "<group>";
+		};
+		AD9A74E81CCD2C1400615C78 /* Atmosphere */ = {
+			isa = PBXGroup;
+			children = (
+				AD9A74EA1CCD2C3100615C78 /* Atmosphere.cpp */,
+				AD9A74EB1CCD2C3100615C78 /* Atmosphere.hpp */,
+			);
+			name = Atmosphere;
+			sourceTree = "<group>";
+		};
+		AD9A74E91CCD2C1900615C78 /* Gravity */ = {
+			isa = PBXGroup;
+			children = (
+				AD9A74ED1CCD2C4400615C78 /* Gravity84.cpp */,
+				AD9A74EE1CCD2C4400615C78 /* Gravity84.hpp */,
+			);
+			name = Gravity;
+			sourceTree = "<group>";
+		};
+		AD9A74F61CCD2C6900615C78 /* CoordTransforms */ = {
+			isa = PBXGroup;
+			children = (
+				AD9A74FB1CCD2C9A00615C78 /* CoordTransforms.cpp */,
+				AD9A74FC1CCD2C9A00615C78 /* CoordTransforms.hpp */,
+			);
+			name = CoordTransforms;
+			sourceTree = "<group>";
+		};
+		AD9A74F71CCD2C7500615C78 /* LatLong */ = {
+			isa = PBXGroup;
+			children = (
+				AD9A74F81CCD2C8600615C78 /* LatLongAlt.cpp */,
+				AD9A74F91CCD2C8600615C78 /* LatLongAlt.hpp */,
+			);
+			name = LatLong;
+			sourceTree = "<group>";
+		};
+		AD9A757F1CCD43A500615C78 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				AD9A75801CCD43C000615C78 /* libSpektr.a */,
+			);
+			name = libs;
+			path = MissileSim;
+			sourceTree = "<group>";
+		};
+		AD9A758C1CCD468500615C78 /* Simulation */ = {
+			isa = PBXGroup;
+			children = (
+				AD9A758D1CCD46BB00615C78 /* MissileSim.cpp */,
+				AD9A758E1CCD46BB00615C78 /* MissileSim.hpp */,
+			);
+			name = Simulation;
+			sourceTree = "<group>";
+		};
+		AD9A75901CCD46FD00615C78 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AD9A75A11CCD8BBC00615C78 /* Contributor */,
+				AD9A75A81CCF26B200615C78 /* MassProperties */,
+				AD9A759D1CCD6DBD00615C78 /* EquationsOfMotion */,
+				AD9A75961CCD479600615C78 /* Target */,
+				AD9A75951CCD478D00615C78 /* Launcher */,
+				AD9A74E61CCD2C0900615C78 /* Planetary */,
+				AD9A75941CCD472C00615C78 /* Missile */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		AD9A75941CCD472C00615C78 /* Missile */ = {
+			isa = PBXGroup;
+			children = (
+				AD9A75AA1CCF29BB00615C78 /* Embedded */,
+				AD9A759B1CCD637800615C78 /* Aerodynamics */,
+				AD9A75981CCD634C00615C78 /* Propulsion */,
+				AD9A75971CCD634500615C78 /* Sensors */,
+				AD9A75911CCD472800615C78 /* MissileModel.cpp */,
+				AD9A75921CCD472800615C78 /* MissileModel.hpp */,
+			);
+			name = Missile;
+			sourceTree = "<group>";
+		};
+		AD9A75951CCD478D00615C78 /* Launcher */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Launcher;
+			sourceTree = "<group>";
+		};
+		AD9A75961CCD479600615C78 /* Target */ = {
+			isa = PBXGroup;
+			children = (
+				AD9A75A41CCF257300615C78 /* TargetModel.cpp */,
+				AD9A75A51CCF257300615C78 /* TargetModel.hpp */,
+			);
+			name = Target;
+			sourceTree = "<group>";
+		};
+		AD9A75971CCD634500615C78 /* Sensors */ = {
+			isa = PBXGroup;
+			children = (
+				AD9A75B01CCF29FF00615C78 /* GPS */,
+				AD9A75AF1CCF29F500615C78 /* Seeker */,
+				AD9A75AE1CCF29F000615C78 /* IMU */,
+			);
+			name = Sensors;
+			sourceTree = "<group>";
+		};
+		AD9A75981CCD634C00615C78 /* Propulsion */ = {
+			isa = PBXGroup;
+			children = (
+				AD9A75AB1CCF29E600615C78 /* RocketMotor.cpp */,
+				AD9A75AC1CCF29E600615C78 /* RocketMotor.hpp */,
+			);
+			name = Propulsion;
+			sourceTree = "<group>";
+		};
+		AD9A75991CCD636800615C78 /* Autopilot */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Autopilot;
+			sourceTree = "<group>";
+		};
+		AD9A759A1CCD637200615C78 /* Guidance */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Guidance;
+			sourceTree = "<group>";
+		};
+		AD9A759B1CCD637800615C78 /* Aerodynamics */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Aerodynamics;
+			sourceTree = "<group>";
+		};
+		AD9A759D1CCD6DBD00615C78 /* EquationsOfMotion */ = {
+			isa = PBXGroup;
+			children = (
+				AD9A759E1CCD6DF600615C78 /* EquationsOfMotion.cpp */,
+				AD9A759F1CCD6DF600615C78 /* EquationsOfMotion.hpp */,
+			);
+			name = EquationsOfMotion;
+			sourceTree = "<group>";
+		};
+		AD9A75A11CCD8BBC00615C78 /* Contributor */ = {
+			isa = PBXGroup;
+			children = (
+				AD9A75A21CCD8BE700615C78 /* ForceContributor.hpp */,
+				AD9A75A31CCD8C5E00615C78 /* MomentContributor.hpp */,
+			);
+			name = Contributor;
+			sourceTree = "<group>";
+		};
+		AD9A75A81CCF26B200615C78 /* MassProperties */ = {
+			isa = PBXGroup;
+			children = (
+				AD9A75BA1CD6C9B900615C78 /* MissileMassProps */,
+				AD9A75B71CD526F700615C78 /* MassPropertiesImpl.hpp */,
+				AD9A75B81CD526F700615C78 /* MassProperties.hpp */,
+			);
+			name = MassProperties;
+			sourceTree = "<group>";
+		};
+		AD9A75A91CCF27CB00615C78 /* Wind */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Wind;
+			sourceTree = "<group>";
+		};
+		AD9A75AA1CCF29BB00615C78 /* Embedded */ = {
+			isa = PBXGroup;
+			children = (
+				AD9A759A1CCD637200615C78 /* Guidance */,
+				AD9A75991CCD636800615C78 /* Autopilot */,
+			);
+			name = Embedded;
+			sourceTree = "<group>";
+		};
+		AD9A75AE1CCF29F000615C78 /* IMU */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = IMU;
+			sourceTree = "<group>";
+		};
+		AD9A75AF1CCF29F500615C78 /* Seeker */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Seeker;
+			sourceTree = "<group>";
+		};
+		AD9A75B01CCF29FF00615C78 /* GPS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = GPS;
+			sourceTree = "<group>";
+		};
+		AD9A75BA1CD6C9B900615C78 /* MissileMassProps */ = {
+			isa = PBXGroup;
+			children = (
+				AD9A75BB1CD6C9F400615C78 /* MissileMassProps.cpp */,
+				AD9A75BC1CD6C9F400615C78 /* MissileMassProps.hpp */,
+			);
+			name = MissileMassProps;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD9A74D61CCD29B900615C78 /* MissileSim */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD9A74DE1CCD29B900615C78 /* Build configuration list for PBXNativeTarget "MissileSim" */;
+			buildPhases = (
+				AD9A74D31CCD29B900615C78 /* Sources */,
+				AD9A74D41CCD29B900615C78 /* Frameworks */,
+				AD9A74D51CCD29B900615C78 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MissileSim;
+			productName = MissileSim;
+			productReference = AD9A74D71CCD29B900615C78 /* MissileSim */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD9A74CF1CCD29B900615C78 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Christian Howard";
+				TargetAttributes = {
+					AD9A74D61CCD29B900615C78 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = AD9A74D21CCD29B900615C78 /* Build configuration list for PBXProject "MissileSim" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AD9A74CE1CCD29B900615C78;
+			productRefGroup = AD9A74D81CCD29B900615C78 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD9A74D61CCD29B900615C78 /* MissileSim */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD9A74D31CCD29B900615C78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD9A75B91CD526F700615C78 /* MassPropertiesImpl.hpp in Sources */,
+				AD9A75A61CCF257300615C78 /* TargetModel.cpp in Sources */,
+				AD9A75931CCD472800615C78 /* MissileModel.cpp in Sources */,
+				AD9A75BD1CD6C9F400615C78 /* MissileMassProps.cpp in Sources */,
+				AD9A74FD1CCD2C9A00615C78 /* CoordTransforms.cpp in Sources */,
+				AD9A74E41CCD2BFA00615C78 /* main.cpp in Sources */,
+				AD9A74EF1CCD2C4400615C78 /* Gravity84.cpp in Sources */,
+				AD9A74F21CCD2C5100615C78 /* Earth.cpp in Sources */,
+				AD9A758F1CCD46BB00615C78 /* MissileSim.cpp in Sources */,
+				AD9A74EC1CCD2C3100615C78 /* Atmosphere.cpp in Sources */,
+				AD9A74FA1CCD2C8600615C78 /* LatLongAlt.cpp in Sources */,
+				AD9A75A01CCD6DF600615C78 /* EquationsOfMotion.cpp in Sources */,
+				AD9A75AD1CCF29E600615C78 /* RocketMotor.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AD9A74DC1CCD29B900615C78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AD9A74DD1CCD29B900615C78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AD9A74DF1CCD29B900615C78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_STRICT_ALIASING = YES;
+				GCC_UNROLL_LOOPS = YES;
+				HEADER_SEARCH_PATHS = (
+					"../../src/**",
+					"../../../Bones/src/**",
+					../../tests,
+					"../../../Spektr/src/**",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AD9A74E01CCD29B900615C78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_OPTIMIZATION_LEVEL = fast;
+				GCC_STRICT_ALIASING = YES;
+				GCC_UNROLL_LOOPS = YES;
+				HEADER_SEARCH_PATHS = (
+					"../../src/**",
+					"../../../Bones/src/**",
+					../../tests,
+					"../../../Spektr/src/**",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD9A74D21CCD29B900615C78 /* Build configuration list for PBXProject "MissileSim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD9A74DC1CCD29B900615C78 /* Debug */,
+				AD9A74DD1CCD29B900615C78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD9A74DE1CCD29B900615C78 /* Build configuration list for PBXNativeTarget "MissileSim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD9A74DF1CCD29B900615C78 /* Debug */,
+				AD9A74E01CCD29B900615C78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD9A74CF1CCD29B900615C78 /* Project object */;
+}

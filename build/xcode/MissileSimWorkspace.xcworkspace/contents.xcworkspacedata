@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:../../../Bones/build/xcode/Data_Structs.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../../Spektr/build/xcode/Spektr.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "container:MissileSim.xcodeproj">
+   </FileRef>
+</Workspace>
