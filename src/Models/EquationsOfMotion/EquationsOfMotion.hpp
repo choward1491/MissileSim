@@ -23,6 +23,7 @@ class MomentContributor;
 typedef la::FastMat<double, 3, 3> mat3;
 
 
+template<class Type>
 class EquationsOfMotion {
 public:
     
@@ -32,14 +33,13 @@ public:
     void operator()(double t, ModelState & dqdt );
     void addForceContributor( ForceContributor & force );
     void addMomentContributor( MomentContributor & moment );
-    int numDims() const;
+    int  numDims() const;
     void updateComponents();
-    
     void setInertia( mat3 & I_, mat3 & Iinv_ );
     void setMass( double & mass );
     
     
-private:
+protected:
     friend class MissileModel;
     friend class TargetModel;
     
@@ -47,6 +47,7 @@ private:
     
     vec3 pos;
     vec3 vel;
+    vec3 accel;
     Quaternion q;
     vec3 omega;
     
@@ -62,11 +63,10 @@ private:
     void getTotalForce( double time, vec3 & total );
     void getTotalMoment( double time, vec3 & total );
     
-    
-    
-    
-    
 };
+
+
+#include "EquationsOfMotionImpl.hpp"
 
 
 #endif /* EquationsOfMotion_hpp */

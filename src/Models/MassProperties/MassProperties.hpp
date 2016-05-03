@@ -12,7 +12,7 @@
 #include <stdio.h>
 #include "vec3.hpp"
 
-class EquationsOfMotion;
+
 typedef la::FastMat<double, 3, 3> mat3;
 
 
@@ -24,7 +24,7 @@ public:
     
     
 protected:
-    friend class EquationsOfMotion;
+    template<class> friend class EquationsOfMotion;
     
     mat3 I;
     mat3 Iinv;

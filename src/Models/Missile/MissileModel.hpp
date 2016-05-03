@@ -11,9 +11,11 @@
 
 #include <stdio.h>
 #include "DynamicModel.hpp"
-#include "EquationsOfMotion.hpp"
+#include "MissileEOM.hpp"
 #include "EulerAngles.hpp"
 #include "MissileMassProps.hpp"
+#include "IMU.hpp"
+#include "GPS.hpp"
 
 class MissileSim;
 class TargetModel;
@@ -114,10 +116,17 @@ public:
 private:
     double roll, pitch, yaw;
     double P, Q, R;
-    EquationsOfMotion eom;
-    MissileMassProps massprops;
+    
+    // Target Missile will go after
     TargetModel * target;
     
+    // Rigid Body Dynamics
+    MissileEOM eom;
+    MissileMassProps massprops;
+    
+    // Sensors
+    IMU imu;
+    GPS gps;
 };
 
 

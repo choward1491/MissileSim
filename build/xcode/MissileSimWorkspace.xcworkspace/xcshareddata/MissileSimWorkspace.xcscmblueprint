@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "9FD6B59D21DC662B564426E763A3B5B05DD47E35",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "DE3CD2327D617BD0A3F32A930F636CA1A64B3492" : 0,
+    "9FD6B59D21DC662B564426E763A3B5B05DD47E35" : 0,
+    "4243EAF92C599029FE186FBAD741554A7AD5453D" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D5209812-E3AA-4D32-BA47-69505B682DDC",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "DE3CD2327D617BD0A3F32A930F636CA1A64B3492" : "Spektr\/",
+    "9FD6B59D21DC662B564426E763A3B5B05DD47E35" : "MissileSim\/",
+    "4243EAF92C599029FE186FBAD741554A7AD5453D" : "Bones\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MissileSimWorkspace",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "build\/xcode\/MissileSimWorkspace.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/choward1491\/Data_Structures.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4243EAF92C599029FE186FBAD741554A7AD5453D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/choward1491\/MissileSim.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9FD6B59D21DC662B564426E763A3B5B05DD47E35"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/choward1491\/NumCH.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DE3CD2327D617BD0A3F32A930F636CA1A64B3492"
+    }
+  ]
+}

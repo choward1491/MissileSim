@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD96341E1CD854B800AAB6D8 /* MissileEOM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD96341C1CD854B800AAB6D8 /* MissileEOM.cpp */; };
+		AD9634211CD862E300AAB6D8 /* IMU.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD96341F1CD862E300AAB6D8 /* IMU.cpp */; };
+		AD9634241CD8666C00AAB6D8 /* GPS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD9634221CD8666C00AAB6D8 /* GPS.cpp */; };
 		AD9A74E41CCD2BFA00615C78 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD9A74E31CCD2BFA00615C78 /* main.cpp */; };
 		AD9A74EC1CCD2C3100615C78 /* Atmosphere.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD9A74EA1CCD2C3100615C78 /* Atmosphere.cpp */; };
 		AD9A74EF1CCD2C4400615C78 /* Gravity84.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD9A74ED1CCD2C4400615C78 /* Gravity84.cpp */; };
@@ -16,7 +19,7 @@
 		AD9A75811CCD43C000615C78 /* libSpektr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD9A75801CCD43C000615C78 /* libSpektr.a */; };
 		AD9A758F1CCD46BB00615C78 /* MissileSim.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD9A758D1CCD46BB00615C78 /* MissileSim.cpp */; };
 		AD9A75931CCD472800615C78 /* MissileModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD9A75911CCD472800615C78 /* MissileModel.cpp */; };
-		AD9A75A01CCD6DF600615C78 /* EquationsOfMotion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD9A759E1CCD6DF600615C78 /* EquationsOfMotion.cpp */; };
+		AD9A75A01CCD6DF600615C78 /* EquationsOfMotionImpl.hpp in Sources */ = {isa = PBXBuildFile; fileRef = AD9A759E1CCD6DF600615C78 /* EquationsOfMotionImpl.hpp */; };
 		AD9A75A61CCF257300615C78 /* TargetModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD9A75A41CCF257300615C78 /* TargetModel.cpp */; };
 		AD9A75AD1CCF29E600615C78 /* RocketMotor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD9A75AB1CCF29E600615C78 /* RocketMotor.cpp */; };
 		AD9A75B91CD526F700615C78 /* MassPropertiesImpl.hpp in Sources */ = {isa = PBXBuildFile; fileRef = AD9A75B71CD526F700615C78 /* MassPropertiesImpl.hpp */; };
@@ -36,6 +39,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AD96341C1CD854B800AAB6D8 /* MissileEOM.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MissileEOM.cpp; path = ../../../src/Models/EquationsOfMotion/MissileEOM/MissileEOM.cpp; sourceTree = "<group>"; };
+		AD96341D1CD854B800AAB6D8 /* MissileEOM.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = MissileEOM.hpp; path = ../../../src/Models/EquationsOfMotion/MissileEOM/MissileEOM.hpp; sourceTree = "<group>"; };
+		AD96341F1CD862E300AAB6D8 /* IMU.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IMU.cpp; path = ../../../src/Models/Sensors/IMU/IMU.cpp; sourceTree = "<group>"; };
+		AD9634201CD862E300AAB6D8 /* IMU.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IMU.hpp; path = ../../../src/Models/Sensors/IMU/IMU.hpp; sourceTree = "<group>"; };
+		AD9634221CD8666C00AAB6D8 /* GPS.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GPS.cpp; path = ../../../src/Models/Sensors/GPS/GPS.cpp; sourceTree = "<group>"; };
+		AD9634231CD8666C00AAB6D8 /* GPS.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = GPS.hpp; path = ../../../src/Models/Sensors/GPS/GPS.hpp; sourceTree = "<group>"; };
 		AD9A74D71CCD29B900615C78 /* MissileSim */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MissileSim; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD9A74E31CCD2BFA00615C78 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../../src/main.cpp; sourceTree = "<group>"; };
 		AD9A74EA1CCD2C3100615C78 /* Atmosphere.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Atmosphere.cpp; path = ../../../src/Planetary/Earth/Atmosphere/Atmosphere.cpp; sourceTree = "<group>"; };
@@ -53,7 +62,7 @@
 		AD9A758E1CCD46BB00615C78 /* MissileSim.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = MissileSim.hpp; path = ../../../src/Simulation/MissileSim.hpp; sourceTree = "<group>"; };
 		AD9A75911CCD472800615C78 /* MissileModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MissileModel.cpp; path = ../../../src/Models/Missile/MissileModel.cpp; sourceTree = "<group>"; };
 		AD9A75921CCD472800615C78 /* MissileModel.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = MissileModel.hpp; path = ../../../src/Models/Missile/MissileModel.hpp; sourceTree = "<group>"; };
-		AD9A759E1CCD6DF600615C78 /* EquationsOfMotion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EquationsOfMotion.cpp; path = ../../../src/Models/EquationsOfMotion/EquationsOfMotion.cpp; sourceTree = "<group>"; };
+		AD9A759E1CCD6DF600615C78 /* EquationsOfMotionImpl.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = EquationsOfMotionImpl.hpp; path = ../../../src/Models/EquationsOfMotion/EquationsOfMotionImpl.hpp; sourceTree = "<group>"; };
 		AD9A759F1CCD6DF600615C78 /* EquationsOfMotion.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = EquationsOfMotion.hpp; path = ../../../src/Models/EquationsOfMotion/EquationsOfMotion.hpp; sourceTree = "<group>"; };
 		AD9A75A21CCD8BE700615C78 /* ForceContributor.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = ForceContributor.hpp; path = ../../../src/Models/Contributors/ForceContributor.hpp; sourceTree = "<group>"; };
 		AD9A75A31CCD8C5E00615C78 /* MomentContributor.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = MomentContributor.hpp; path = ../../../src/Models/Contributors/MomentContributor.hpp; sourceTree = "<group>"; };
@@ -79,6 +88,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD96341B1CD8547F00AAB6D8 /* MissileEOM */ = {
+			isa = PBXGroup;
+			children = (
+				AD96341C1CD854B800AAB6D8 /* MissileEOM.cpp */,
+				AD96341D1CD854B800AAB6D8 /* MissileEOM.hpp */,
+			);
+			name = MissileEOM;
+			sourceTree = "<group>";
+		};
 		AD9A74CE1CCD29B900615C78 = {
 			isa = PBXGroup;
 			children = (
@@ -276,7 +294,8 @@
 		AD9A759D1CCD6DBD00615C78 /* EquationsOfMotion */ = {
 			isa = PBXGroup;
 			children = (
-				AD9A759E1CCD6DF600615C78 /* EquationsOfMotion.cpp */,
+				AD96341B1CD8547F00AAB6D8 /* MissileEOM */,
+				AD9A759E1CCD6DF600615C78 /* EquationsOfMotionImpl.hpp */,
 				AD9A759F1CCD6DF600615C78 /* EquationsOfMotion.hpp */,
 			);
 			name = EquationsOfMotion;
@@ -320,6 +339,8 @@
 		AD9A75AE1CCF29F000615C78 /* IMU */ = {
 			isa = PBXGroup;
 			children = (
+				AD96341F1CD862E300AAB6D8 /* IMU.cpp */,
+				AD9634201CD862E300AAB6D8 /* IMU.hpp */,
 			);
 			name = IMU;
 			sourceTree = "<group>";
@@ -334,6 +355,8 @@
 		AD9A75B01CCF29FF00615C78 /* GPS */ = {
 			isa = PBXGroup;
 			children = (
+				AD9634221CD8666C00AAB6D8 /* GPS.cpp */,
+				AD9634231CD8666C00AAB6D8 /* GPS.hpp */,
 			);
 			name = GPS;
 			sourceTree = "<group>";
@@ -405,16 +428,19 @@
 			files = (
 				AD9A75B91CD526F700615C78 /* MassPropertiesImpl.hpp in Sources */,
 				AD9A75A61CCF257300615C78 /* TargetModel.cpp in Sources */,
+				AD9634241CD8666C00AAB6D8 /* GPS.cpp in Sources */,
 				AD9A75931CCD472800615C78 /* MissileModel.cpp in Sources */,
 				AD9A75BD1CD6C9F400615C78 /* MissileMassProps.cpp in Sources */,
 				AD9A74FD1CCD2C9A00615C78 /* CoordTransforms.cpp in Sources */,
 				AD9A74E41CCD2BFA00615C78 /* main.cpp in Sources */,
 				AD9A74EF1CCD2C4400615C78 /* Gravity84.cpp in Sources */,
 				AD9A74F21CCD2C5100615C78 /* Earth.cpp in Sources */,
+				AD96341E1CD854B800AAB6D8 /* MissileEOM.cpp in Sources */,
+				AD9634211CD862E300AAB6D8 /* IMU.cpp in Sources */,
 				AD9A758F1CCD46BB00615C78 /* MissileSim.cpp in Sources */,
 				AD9A74EC1CCD2C3100615C78 /* Atmosphere.cpp in Sources */,
 				AD9A74FA1CCD2C8600615C78 /* LatLongAlt.cpp in Sources */,
-				AD9A75A01CCD6DF600615C78 /* EquationsOfMotion.cpp in Sources */,
+				AD9A75A01CCD6DF600615C78 /* EquationsOfMotionImpl.hpp in Sources */,
 				AD9A75AD1CCF29E600615C78 /* RocketMotor.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

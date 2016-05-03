@@ -17,16 +17,26 @@ MissileModel::MissileModel(){
 
 
 void MissileModel::initialize(){
+    
+    // init pos, velocity, attitude
     LatLongAlt start(0,0,10000);
     eom.setInitialLatLong(start);
     vec3 startECEF = transforms::convertLLAtoECEF(start);
     vec3 velENU = vec3_ops::equal(0, 0, 0);
     vec3 velECEF = transforms::ENUtoECEF_Matrix(start)*velENU;
     Quaternion q0(-Constants::pi/6.0, vec3_ops::equal(0.0, 0, 1.0) );
+    
+    // init rigid body
     massprops.initialize();
     eom.setMass(massprops.mass);
     eom.setInertia(massprops.I, massprops.Iinv);
     
+    // sensor init
+    imu.setAccelerationSource(eom.accel);
+    imu.setAngularVelocitySource(eom.omega);
+    gps.setLatLongSource(eom.current_pos);
+    
+    // initial state condition
     state[0] = startECEF[0];
     state[1] = startECEF[1];
     state[2] = startECEF[2];
@@ -41,11 +51,14 @@ void MissileModel::initialize(){
     state[11] = 0;
     state[12] = 0.174532925199433;
     
+    // initialize auxilary variables based
+    // on initialized states
     update();
 }
 
 void MissileModel::addSubModels( MissileSim & msim ){
-    
+    msim.addDiscrete(&imu, 600);
+    msim.addDiscrete(&gps, 1);
 }
 
 

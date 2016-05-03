@@ -1,18 +1,20 @@
 //
-//  EquationsOfMotion.cpp
+//  EOM.cpp
 //  MissileSim
 //
 //  Created by Christian J Howard on 4/24/16.
 //  Copyright © 2016 Christian Howard. All rights reserved.
 //
 
+
+#ifndef _EOM_IMPL_HPP_
+#define _EOM_IMPL_HPP_
+
 #include "EquationsOfMotion.hpp"
 #include "ModelState.hpp"
 #include "vec3.hpp"
 #include "Earth.hpp"
 #include "Gravity84.hpp"
-#include "ForceContributor.hpp"
-#include "MomentContributor.hpp"
 #include "CoordTransforms.hpp"
 
 /*
@@ -22,37 +24,50 @@
  vec3 pos;
  vec3 vel;
  */
+#define HEADER template<class Type>
+#define EOM EquationsOfMotion<Type>
 
 namespace ops = vec3_ops;
 
-void EquationsOfMotion::addForceContributor( ForceContributor & force ){
+HEADER
+void EOM::addForceContributor( ForceContributor & force ){
     forces.push_back(&force);
 }
-void EquationsOfMotion::addMomentContributor( MomentContributor & moment ){
+
+HEADER
+void EOM::addMomentContributor( MomentContributor & moment ){
     moments.push_back(&moment);
 }
 
-EquationsOfMotion::EquationsOfMotion():initial_pos(){
+HEADER
+EOM::EquationsOfMotion():initial_pos(){
     numDims_ = 4 + 3*3;
 }
 
-void EquationsOfMotion::setInertia( mat3 & I_, mat3 & Iinv_ ){
+HEADER
+void EOM::setInertia( mat3 & I_, mat3 & Iinv_ ){
     I = &I_;
     Iinv = &Iinv_;
 }
-void EquationsOfMotion::setMass( double & mass_ ){
+
+HEADER
+void EOM::setMass( double & mass_ ){
     mass = &mass_;
 }
 
-void EquationsOfMotion::setInitialLatLong( const LatLongAlt & init_coord ){
+HEADER
+void EOM::setInitialLatLong( const LatLongAlt & init_coord ){
     initial_pos = init_coord;
     current_pos = initial_pos;
 }
-void EquationsOfMotion::setEOM_State( ModelState & eom_state ){
+
+HEADER
+void EOM::setEOM_State( ModelState & eom_state ){
     state = &eom_state;
 }
 
-void EquationsOfMotion::updateComponents(){
+HEADER
+void EOM::updateComponents(){
     ModelState & s = *state;
     pos = ops::equal(s[0], s[1], s[2]);
     current_pos = transforms::convertECEFtoLLA(pos);
@@ -65,7 +80,8 @@ void EquationsOfMotion::updateComponents(){
     omega = ops::equal(s[10], s[11], s[12]);
 }
 
-void EquationsOfMotion::operator()(double t, ModelState & dudt ){
+HEADER
+void EOM::operator()(double t, ModelState & dudt ){
     
     // position derivative
     dudt[0] = vel[0];
@@ -77,7 +93,6 @@ void EquationsOfMotion::operator()(double t, ModelState & dudt ){
     vec3 totAccel = 0, totAccelENU;
     vec3 gravity = ops::equal(0, 0, g); // in NED frame
     getTotalForce( t, totAccel ); // in body frame
-    totAccel[0] = 700;
     totAccel = totAccel/(*mass);
     
     
@@ -90,6 +105,7 @@ void EquationsOfMotion::operator()(double t, ModelState & dudt ){
     totAccel   = enu2ecef*totAccelENU // external accel sum
                + 2.0 * ops::cross(Earth::omega, vel) // coriolis
                + ops::cross(Earth::omega, ops::cross(Earth::omega, rotVel)); // centripital
+    accel = totAccel; // used for sensors/external models
 
     dudt[3] = totAccel[0];
     dudt[4] = totAccel[1];
@@ -112,18 +128,22 @@ void EquationsOfMotion::operator()(double t, ModelState & dudt ){
     
 }
 
-void EquationsOfMotion::getTotalForce( double time, vec3 & total ){
-    for(int i = 0; i < forces.size(); i++ ){
-        total = total + forces[i]->getForce( time );
-    }
+HEADER
+void EOM::getTotalForce( double time, vec3 & total ){
+    static_cast<Type*>(this)->getExternalForceSum( time, total );
 }
 
-void EquationsOfMotion::getTotalMoment( double time, vec3 & total ){
-    for(int i = 0; i < moments.size(); i++ ){
-        total = total + moments[i]->getMoment( time );
-    }
+HEADER
+void EOM::getTotalMoment( double time, vec3 & total ){
+    static_cast<Type*>(this)->getExternalMomentSum( time, total );
 }
 
-int EquationsOfMotion::numDims() const {
+HEADER
+int EOM::numDims() const {
     return numDims_;
 }
+
+#undef HEADER
+#undef EOM
+
+#endif
