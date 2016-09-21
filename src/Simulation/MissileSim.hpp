@@ -16,7 +16,7 @@
 #include "RungeKutta4.hpp"
 #include "ExplicitTrapezoidal.hpp"
 
-class MissileSim : public Simulator<MissileSim,ExplicitTrapezoidal>{
+class MissileSim : public Simulator<MissileSim,RungeKutta4>{
 public:
     
     MissileSim();

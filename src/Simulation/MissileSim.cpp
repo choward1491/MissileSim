@@ -14,7 +14,7 @@ MissileSim::MissileSim(){
     setSimHistoryPath(historyFile);
     state.printFrequency = 100;
     numMC = 1;
-    writeSimHistory = true;
+    writeSimHistory = false;
 }
 
 
@@ -30,7 +30,7 @@ void MissileSim::_connectModelsTogether(){
 
 bool MissileSim::_finishedSimulation( SimState & state ) const{
     //return missile.getAltitude() <= 0.0;
-    return getTime() > 30;
+    return getTime() > 3600;
 }
 void MissileSim::_finalizeMonteCarloRun(){
     printf("Finished #%i Monte Carlo run!\n",static_cast<int>(getCompletedMC()));

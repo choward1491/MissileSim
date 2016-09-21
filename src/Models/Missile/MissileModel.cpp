@@ -32,9 +32,9 @@ void MissileModel::initialize(){
     eom.setInertia(massprops.I, massprops.Iinv);
     
     // sensor init
-    imu.setAccelerationSource(eom.accel);
-    imu.setAngularVelocitySource(eom.omega);
-    gps.setLatLongSource(eom.current_pos);
+    //imu.setAccelerationSource(eom.accel);
+    //imu.setAngularVelocitySource(eom.omega);
+    //gps.setLatLongSource(eom.current_pos);
     
     // initial state condition
     state[0] = startECEF[0];
@@ -57,8 +57,8 @@ void MissileModel::initialize(){
 }
 
 void MissileModel::addSubModels( MissileSim & msim ){
-    msim.addDiscrete(&imu, 600);
-    msim.addDiscrete(&gps, 1);
+    //msim.addDiscrete(&imu, 600);
+    //msim.addDiscrete(&gps, 1);
 }
 
 
@@ -97,7 +97,7 @@ int MissileModel::numDims() const{
 
 void MissileModel::operator()( double time , ModelState & dqdt ){
     eom(time,dqdt);
-    massprops.update_(time);
+    //massprops.update_(time);
 }
 
 

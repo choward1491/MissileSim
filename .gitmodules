@@ -1,0 +1,27 @@
+[submodule "dependencies/KrystalBall"]
+	path = dependencies/KrystalBall
+	url = https://github.com/choward1491/KrystalBall
+[submodule "dependencies/Bones"]
+	path = dependencies/Bones
+	url = https://github.com/choward1491/Bones
+[submodule "dependencies/ConfigReader"]
+	path = dependencies/ConfigReader
+	url = https://github.com/choward1491/ConfigReader
+[submodule "dependencies/FileWrap"]
+	path = dependencies/FileWrap
+	url = https://github.com/choward1491/FileWrap
+[submodule "dependencies/Geom3"]
+	path = dependencies/Geom3
+	url = https://github.com/choward1491/Geom3
+[submodule "dependencies/MetaLA"]
+	path = dependencies/MetaLA
+	url = https://github.com/choward1491/MetaLA
+[submodule "dependencies/Numbers"]
+	path = dependencies/Numbers
+	url = https://github.com/choward1491/Numbers
+[submodule "dependencies/Timer"]
+	path = dependencies/Timer
+	url = https://github.com/choward1491/Timer
+[submodule "dependencies/TestAutomation"]
+	path = dependencies/TestAutomation
+	url = https://github.com/choward1491/TestAutomation

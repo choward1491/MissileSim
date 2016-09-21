@@ -1,0 +1,86 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "9FD6B59D21DC662B564426E763A3B5B05DD47E35",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "20B88AE65ACF4BB9BD128C0353C1C21E6B32C37F" : 9223372036854775807,
+    "C70CFB262A5A037C64F5E2282601A1F459448C3B" : 9223372036854775807,
+    "1CC74749AA400057B98BAC82757A89DA9C5E8A2F" : 9223372036854775807,
+    "C131C476896A33A99026629DC672FF9D7DA1100A" : 9223372036854775807,
+    "849198FAB5B8611CF0F678CD57D6C4B4FA484B94" : 9223372036854775807,
+    "1FC39AAC173625F0FE4B9411A1560DAF6A5C0F45" : 9223372036854775807,
+    "9FD6B59D21DC662B564426E763A3B5B05DD47E35" : 9223372036854775807,
+    "3ED4434BCF35D1C11AD3B44B38C87192E724CCA2" : 9223372036854775807,
+    "4243EAF92C599029FE186FBAD741554A7AD5453D" : 9223372036854775807,
+    "2FEC591E023291C8810E9071A4DF87CA8CA4B90B" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C5564D80-4165-4E7F-A06A-196AB5979005",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "20B88AE65ACF4BB9BD128C0353C1C21E6B32C37F" : "MissileSim\/dependencies\/FileWrap\/",
+    "C70CFB262A5A037C64F5E2282601A1F459448C3B" : "MissileSim\/dependencies\/ConfigReader\/",
+    "1CC74749AA400057B98BAC82757A89DA9C5E8A2F" : "MissileSim\/dependencies\/Geom3\/",
+    "C131C476896A33A99026629DC672FF9D7DA1100A" : "MissileSim\/dependencies\/TestAutomation\/",
+    "849198FAB5B8611CF0F678CD57D6C4B4FA484B94" : "MissileSim\/dependencies\/KrystalBall\/",
+    "1FC39AAC173625F0FE4B9411A1560DAF6A5C0F45" : "MissileSim\/dependencies\/Numbers\/",
+    "9FD6B59D21DC662B564426E763A3B5B05DD47E35" : "MissileSim\/",
+    "3ED4434BCF35D1C11AD3B44B38C87192E724CCA2" : "MissileSim\/dependencies\/Timer\/",
+    "4243EAF92C599029FE186FBAD741554A7AD5453D" : "MissileSim\/dependencies\/Bones\/",
+    "2FEC591E023291C8810E9071A4DF87CA8CA4B90B" : "MissileSim\/dependencies\/MetaLA\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MissileSim",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "build\/xcode\/MissileSim.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/choward1491\/Geom3",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1CC74749AA400057B98BAC82757A89DA9C5E8A2F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/choward1491\/Numbers",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1FC39AAC173625F0FE4B9411A1560DAF6A5C0F45"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/choward1491\/FileWrap",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "20B88AE65ACF4BB9BD128C0353C1C21E6B32C37F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/choward1491\/MetaLA",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2FEC591E023291C8810E9071A4DF87CA8CA4B90B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/choward1491\/Timer",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3ED4434BCF35D1C11AD3B44B38C87192E724CCA2"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/choward1491\/Bones",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4243EAF92C599029FE186FBAD741554A7AD5453D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/choward1491\/KrystalBall",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "849198FAB5B8611CF0F678CD57D6C4B4FA484B94"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/choward1491\/MissileSim.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9FD6B59D21DC662B564426E763A3B5B05DD47E35"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/choward1491\/TestAutomation",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C131C476896A33A99026629DC672FF9D7DA1100A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/choward1491\/ConfigReader",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C70CFB262A5A037C64F5E2282601A1F459448C3B"
+    }
+  ]
+}
