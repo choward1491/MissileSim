@@ -10,11 +10,7 @@
 #define MassProperties_hpp
 
 #include <stdio.h>
-#include "vec3.hpp"
-
-
-typedef la::FastMat<double, 3, 3> mat3;
-
+#include "math3d_define.hpp"
 
 template<class Type>
 class MassProperties {

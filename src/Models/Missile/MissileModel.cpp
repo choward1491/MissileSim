@@ -9,6 +9,7 @@
 #include "MissileModel.hpp"
 #include "MissileSim.hpp"
 #include "CoordTransforms.hpp"
+#include "Constants.hpp"
 
 MissileModel::MissileModel(){
     model_name = "missile";
@@ -22,9 +23,9 @@ void MissileModel::initialize(){
     LatLongAlt start(0,0,10000);
     eom.setInitialLatLong(start);
     vec3 startECEF = transforms::convertLLAtoECEF(start);
-    vec3 velENU = vec3_ops::equal(0, 0, 0);
+    vec3 velENU(0, 0, 0);
     vec3 velECEF = transforms::ENUtoECEF_Matrix(start)*velENU;
-    Quaternion q0(-Constants::pi/6.0, vec3_ops::equal(0.0, 0, 1.0) );
+    quat q0(-Constants::pi/6.0, vec3(0.0, 0, 1.0) );
     
     // init rigid body
     massprops.initialize();

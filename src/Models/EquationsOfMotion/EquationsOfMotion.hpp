@@ -13,14 +13,13 @@
 #include <vector>
 #include "Quaternion.hpp"
 #include "LatLongAlt.hpp"
+#include "math3d_define.hpp"
 
 class ModelState;
 class MissileModel;
 class TargetModel;
 class ForceContributor;
 class MomentContributor;
-
-typedef la::FastMat<double, 3, 3> mat3;
 
 
 template<class Type>
@@ -48,7 +47,7 @@ protected:
     vec3 pos;
     vec3 vel;
     vec3 accel;
-    Quaternion q;
+    quat q;
     vec3 omega;
     
     LatLongAlt initial_pos;

@@ -12,14 +12,14 @@
 
 #include "EquationsOfMotion.hpp"
 #include "ModelState.hpp"
-#include "vec3.hpp"
+#include "math3d_define.hpp"
 #include "Earth.hpp"
 #include "Gravity84.hpp"
 #include "CoordTransforms.hpp"
 
 /*
  int numDims_;
- Quaternion q;
+ quat q;
  vec3 omega;
  vec3 pos;
  vec3 vel;
@@ -27,7 +27,6 @@
 #define HEADER template<class Type>
 #define EOM EquationsOfMotion<Type>
 
-namespace ops = vec3_ops;
 
 HEADER
 void EOM::addForceContributor( ForceContributor & force ){
@@ -69,15 +68,15 @@ void EOM::setEOM_State( ModelState & eom_state ){
 HEADER
 void EOM::updateComponents(){
     ModelState & s = *state;
-    pos = ops::equal(s[0], s[1], s[2]);
+    pos = vec3(s[0], s[1], s[2]);
     current_pos = transforms::convertECEFtoLLA(pos);
-    vel = ops::equal(s[3], s[4], s[5]);
+    vel = vec3(s[3], s[4], s[5]);
     q[0] = s[6];
     q[1] = s[7];
     q[2] = s[8];
     q[3] = s[9];
     q.normalize();
-    omega = ops::equal(s[10], s[11], s[12]);
+    omega = vec3(s[10], s[11], s[12]);
 }
 
 HEADER
@@ -90,10 +89,13 @@ void EOM::operator()(double t, ModelState & dudt ){
     
     // velocity derivative
     double g = Earth::gravity::obtainGravityWithCoordinate(current_pos);
-    vec3 totAccel = 0, totAccelENU;
-    vec3 gravity = ops::equal(0, 0, g); // in NED frame
+    vec3 totAccel, totAccelENU;
+    vec3 gravity(0, 0, g); // in NED frame
     getTotalForce( t, totAccel ); // in body frame
-    totAccel = totAccel/(*mass);
+    double m = (*mass);
+    totAccel[0] /= m;
+    totAccel[1] /= m;
+    totAccel[2] /= m;
     
     
     // add gravity and rotate to ECEF
@@ -101,10 +103,10 @@ void EOM::operator()(double t, ModelState & dudt ){
     mat3 enu2ecef = transforms::ENUtoECEF_Matrix(current_pos);
     
     // compute net acceleration
-    vec3 rotVel = vel + ops::cross(Earth::omega, pos);
+    vec3 rotVel = vel + Earth::omega.cross(pos);
     totAccel   = enu2ecef*totAccelENU // external accel sum
-               + 2.0 * ops::cross(Earth::omega, vel) // coriolis
-               + ops::cross(Earth::omega, ops::cross(Earth::omega, rotVel)); // centripital
+               + Earth::omega.cross(vel)*2.0 // coriolis
+               + Earth::omega.cross(Earth::omega.cross(rotVel)); // centripital
     accel = totAccel; // used for sensors/external models
 
     dudt[3] = totAccel[0];
@@ -112,16 +114,16 @@ void EOM::operator()(double t, ModelState & dudt ){
     dudt[5] = totAccel[2];
     
     // attitude derivative
-    Quaternion dqdt = q.getDerivative(omega);
+    quat dqdt = q.getDerivative(omega);
     dudt[6] = dqdt[0];
     dudt[7] = dqdt[1];
     dudt[8] = dqdt[2];
     dudt[9] = dqdt[3];
     
     // omega derivative
-    vec3 totMoment = 0;
+    vec3 totMoment;
     getTotalMoment(t, totMoment); // in body frame
-    vec3 dwdt = (*Iinv)*(totMoment - ops::cross(omega, (*I)*omega));
+    vec3 dwdt = (*Iinv)*(totMoment - omega.cross((*I)*omega));
     dudt[10] = dwdt[0];
     dudt[11] = dwdt[1];
     dudt[12] = dwdt[2];

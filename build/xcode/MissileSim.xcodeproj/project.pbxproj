@@ -23,6 +23,7 @@
 		AD9A75AD1CCF29E600615C78 /* RocketMotor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD9A75AB1CCF29E600615C78 /* RocketMotor.cpp */; };
 		AD9A75B91CD526F700615C78 /* MassPropertiesImpl.hpp in Sources */ = {isa = PBXBuildFile; fileRef = AD9A75B71CD526F700615C78 /* MassPropertiesImpl.hpp */; };
 		AD9A75BD1CD6C9F400615C78 /* MissileMassProps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD9A75BB1CD6C9F400615C78 /* MissileMassProps.cpp */; };
+		ADA61A531D9677E5001881EE /* EulerAngles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADA61A4B1D9677E5001881EE /* EulerAngles.cpp */; };
 		ADB769731D924DD0006A4683 /* Constants.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADB769241D924DD0006A4683 /* Constants.cpp */; };
 		ADB769741D924DD0006A4683 /* DataPrinter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADB769271D924DD0006A4683 /* DataPrinter.cpp */; };
 		ADB769751D924DD0006A4683 /* DiscreteModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADB7692A1D924DD0006A4683 /* DiscreteModel.cpp */; };
@@ -54,9 +55,6 @@
 		ADB769A31D924E57006A4683 /* Fraction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADB7699F1D924E57006A4683 /* Fraction.cpp */; };
 		ADB769A41D924E57006A4683 /* RandomNumberGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADB769A11D924E57006A4683 /* RandomNumberGenerator.cpp */; };
 		ADB769D51D924E66006A4683 /* MatHashes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADB769B61D924E66006A4683 /* MatHashes.cpp */; };
-		ADB769DD1D924E78006A4683 /* EulerAngles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADB769D61D924E78006A4683 /* EulerAngles.cpp */; };
-		ADB769DE1D924E78006A4683 /* Quaternion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADB769D91D924E78006A4683 /* Quaternion.cpp */; };
-		ADB769DF1D924E78006A4683 /* vec3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADB769DB1D924E78006A4683 /* vec3.cpp */; };
 		ADB769E21D924E85006A4683 /* FileObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADB769E01D924E85006A4683 /* FileObject.cpp */; };
 		ADB769E51D924E94006A4683 /* Parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADB769E31D924E94006A4683 /* Parser.cpp */; };
 		ADB76A141D924EA7006A4683 /* CombinatorialSoln.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADB769E71D924EA7006A4683 /* CombinatorialSoln.cpp */; };
@@ -112,6 +110,20 @@
 		AD9A75B81CD526F700615C78 /* MassProperties.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = MassProperties.hpp; path = ../../../src/Models/MassProperties/MassProperties.hpp; sourceTree = "<group>"; };
 		AD9A75BB1CD6C9F400615C78 /* MissileMassProps.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MissileMassProps.cpp; path = ../../../src/Models/MassProperties/MissileMassProps.cpp; sourceTree = "<group>"; };
 		AD9A75BC1CD6C9F400615C78 /* MissileMassProps.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = MissileMassProps.hpp; path = ../../../src/Models/MassProperties/MissileMassProps.hpp; sourceTree = "<group>"; };
+		ADA61A4B1D9677E5001881EE /* EulerAngles.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EulerAngles.cpp; path = ../../../dependencies/Geom3/src/EulerAngles.cpp; sourceTree = "<group>"; };
+		ADA61A4C1D9677E5001881EE /* EulerAngles.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = EulerAngles.hpp; path = ../../../dependencies/Geom3/src/EulerAngles.hpp; sourceTree = "<group>"; };
+		ADA61A4D1D9677E5001881EE /* Geometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Geometry.h; path = ../../../dependencies/Geom3/src/Geometry.h; sourceTree = "<group>"; };
+		ADA61A4E1D9677E5001881EE /* Quaternion_Impl.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Quaternion_Impl.hpp; path = ../../../dependencies/Geom3/src/Quaternion_Impl.hpp; sourceTree = "<group>"; };
+		ADA61A4F1D9677E5001881EE /* Quaternion.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Quaternion.hpp; path = ../../../dependencies/Geom3/src/Quaternion.hpp; sourceTree = "<group>"; };
+		ADA61A501D9677E5001881EE /* vec_impl.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = vec_impl.hpp; path = ../../../dependencies/Geom3/src/vec_impl.hpp; sourceTree = "<group>"; };
+		ADA61A511D9677E5001881EE /* vec.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = vec.hpp; path = ../../../dependencies/Geom3/src/vec.hpp; sourceTree = "<group>"; };
+		ADA61A521D9677E5001881EE /* vec3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = vec3.hpp; path = ../../../dependencies/Geom3/src/vec3.hpp; sourceTree = "<group>"; };
+		ADA61A551D967BA6001881EE /* math3d_define.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = math3d_define.hpp; path = ../../../src/Utility/math3d_define.hpp; sourceTree = "<group>"; };
+		ADA61A641D972265001881EE /* mat_impl.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = mat_impl.hpp; path = ../../../dependencies/Geom3/src/mat_impl.hpp; sourceTree = "<group>"; };
+		ADA61A651D972265001881EE /* mat.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = mat.hpp; path = ../../../dependencies/Geom3/src/mat.hpp; sourceTree = "<group>"; };
+		ADA61A661D972265001881EE /* math_bundle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = math_bundle.hpp; path = ../../../dependencies/Geom3/src/math_bundle.hpp; sourceTree = "<group>"; };
+		ADA61A671D972265001881EE /* math_operators.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = math_operators.hpp; path = ../../../dependencies/Geom3/src/math_operators.hpp; sourceTree = "<group>"; };
+		ADA61A691D972E42001881EE /* MissileSim.profdata */ = {isa = PBXFileReference; lastKnownFileType = file; path = MissileSim.profdata; sourceTree = "<group>"; };
 		ADB769241D924DD0006A4683 /* Constants.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Constants.cpp; sourceTree = "<group>"; };
 		ADB769251D924DD0006A4683 /* Constants.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Constants.hpp; sourceTree = "<group>"; };
 		ADB769271D924DD0006A4683 /* DataPrinter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DataPrinter.cpp; sourceTree = "<group>"; };
@@ -223,13 +235,6 @@
 		ADB769D21D924E66006A4683 /* SymmetricSolver.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SymmetricSolver.hpp; sourceTree = "<group>"; };
 		ADB769D31D924E66006A4683 /* TriDiagSolver.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TriDiagSolver.hpp; sourceTree = "<group>"; };
 		ADB769D41D924E66006A4683 /* UpperSolver.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = UpperSolver.hpp; sourceTree = "<group>"; };
-		ADB769D61D924E78006A4683 /* EulerAngles.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EulerAngles.cpp; path = ../../../dependencies/Geom3/EulerAngles.cpp; sourceTree = "<group>"; };
-		ADB769D71D924E78006A4683 /* EulerAngles.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = EulerAngles.hpp; path = ../../../dependencies/Geom3/EulerAngles.hpp; sourceTree = "<group>"; };
-		ADB769D81D924E78006A4683 /* Geometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Geometry.h; path = ../../../dependencies/Geom3/Geometry.h; sourceTree = "<group>"; };
-		ADB769D91D924E78006A4683 /* Quaternion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Quaternion.cpp; path = ../../../dependencies/Geom3/Quaternion.cpp; sourceTree = "<group>"; };
-		ADB769DA1D924E78006A4683 /* Quaternion.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Quaternion.hpp; path = ../../../dependencies/Geom3/Quaternion.hpp; sourceTree = "<group>"; };
-		ADB769DB1D924E78006A4683 /* vec3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vec3.cpp; path = ../../../dependencies/Geom3/vec3.cpp; sourceTree = "<group>"; };
-		ADB769DC1D924E78006A4683 /* vec3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = vec3.hpp; path = ../../../dependencies/Geom3/vec3.hpp; sourceTree = "<group>"; };
 		ADB769E01D924E85006A4683 /* FileObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FileObject.cpp; path = ../../../dependencies/FileWrap/FileObject.cpp; sourceTree = "<group>"; };
 		ADB769E11D924E85006A4683 /* FileObject.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = FileObject.hpp; path = ../../../dependencies/FileWrap/FileObject.hpp; sourceTree = "<group>"; };
 		ADB769E31D924E94006A4683 /* Parser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Parser.cpp; path = ../../../dependencies/ConfigReader/Parser.cpp; sourceTree = "<group>"; };
@@ -296,6 +301,7 @@
 			children = (
 				AD9A74D91CCD29B900615C78 /* MissileSim */,
 				AD9A74D81CCD29B900615C78 /* Products */,
+				ADA61A681D972E42001881EE /* OptimizationProfiles */,
 			);
 			sourceTree = "<group>";
 		};
@@ -552,6 +558,22 @@
 			name = MissileMassProps;
 			sourceTree = "<group>";
 		};
+		ADA61A541D967B79001881EE /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				ADA61A551D967BA6001881EE /* math3d_define.hpp */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		ADA61A681D972E42001881EE /* OptimizationProfiles */ = {
+			isa = PBXGroup;
+			children = (
+				ADA61A691D972E42001881EE /* MissileSim.profdata */,
+			);
+			path = OptimizationProfiles;
+			sourceTree = "<group>";
+		};
 		ADB769211D924B25006A4683 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
@@ -571,6 +593,7 @@
 		ADB769221D924B2E006A4683 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				ADA61A541D967B79001881EE /* Utility */,
 				AD9A75901CCD46FD00615C78 /* Models */,
 				AD9A758C1CCD468500615C78 /* Simulation */,
 				AD9A74E51CCD2C0300615C78 /* Units */,
@@ -863,13 +886,18 @@
 		ADB769911D924E09006A4683 /* Geom3 */ = {
 			isa = PBXGroup;
 			children = (
-				ADB769D61D924E78006A4683 /* EulerAngles.cpp */,
-				ADB769D71D924E78006A4683 /* EulerAngles.hpp */,
-				ADB769D81D924E78006A4683 /* Geometry.h */,
-				ADB769D91D924E78006A4683 /* Quaternion.cpp */,
-				ADB769DA1D924E78006A4683 /* Quaternion.hpp */,
-				ADB769DB1D924E78006A4683 /* vec3.cpp */,
-				ADB769DC1D924E78006A4683 /* vec3.hpp */,
+				ADA61A641D972265001881EE /* mat_impl.hpp */,
+				ADA61A651D972265001881EE /* mat.hpp */,
+				ADA61A661D972265001881EE /* math_bundle.hpp */,
+				ADA61A671D972265001881EE /* math_operators.hpp */,
+				ADA61A4B1D9677E5001881EE /* EulerAngles.cpp */,
+				ADA61A4C1D9677E5001881EE /* EulerAngles.hpp */,
+				ADA61A4D1D9677E5001881EE /* Geometry.h */,
+				ADA61A4E1D9677E5001881EE /* Quaternion_Impl.hpp */,
+				ADA61A4F1D9677E5001881EE /* Quaternion.hpp */,
+				ADA61A501D9677E5001881EE /* vec_impl.hpp */,
+				ADA61A511D9677E5001881EE /* vec.hpp */,
+				ADA61A521D9677E5001881EE /* vec3.hpp */,
 			);
 			name = Geom3;
 			sourceTree = "<group>";
@@ -1217,12 +1245,10 @@
 				AD9634211CD862E300AAB6D8 /* IMU.cpp in Sources */,
 				ADB769851D924DD0006A4683 /* ExplicitEuler.cpp in Sources */,
 				ADB7697A1D924DD0006A4683 /* HeatEquationSim.cpp in Sources */,
-				ADB769DE1D924E78006A4683 /* Quaternion.cpp in Sources */,
 				ADB769821D924DD0006A4683 /* ModelState.cpp in Sources */,
 				AD9A758F1CCD46BB00615C78 /* MissileSim.cpp in Sources */,
 				ADB769871D924DD0006A4683 /* RKCashKarp.cpp in Sources */,
 				ADB7697D1D924DD0006A4683 /* PointBodyModel.cpp in Sources */,
-				ADB769DD1D924E78006A4683 /* EulerAngles.cpp in Sources */,
 				ADB769E21D924E85006A4683 /* FileObject.cpp in Sources */,
 				ADB769861D924DD0006A4683 /* ExplicitTrapezoidal.cpp in Sources */,
 				ADB769781D924DD0006A4683 /* AdvectionEqnSim.cpp in Sources */,
@@ -1238,8 +1264,8 @@
 				ADB769761D924DD0006A4683 /* DynamicModel.cpp in Sources */,
 				ADB769801D924DD0006A4683 /* PendulumSim.cpp in Sources */,
 				ADB769891D924DD0006A4683 /* ButcherTable.cpp in Sources */,
+				ADA61A531D9677E5001881EE /* EulerAngles.cpp in Sources */,
 				AD9A74FA1CCD2C8600615C78 /* LatLongAlt.cpp in Sources */,
-				ADB769DF1D924E78006A4683 /* vec3.cpp in Sources */,
 				ADB7698B1D924DD0006A4683 /* SimTime.cpp in Sources */,
 				ADB769981D924E3A006A4683 /* Timer.cpp in Sources */,
 				AD9A75A01CCD6DF600615C78 /* EquationsOfMotionImpl.hpp in Sources */,
@@ -1341,6 +1367,7 @@
 		AD9A74DF1CCD29B900615C78 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_USE_OPTIMIZATION_PROFILE = YES;
 				GCC_STRICT_ALIASING = YES;
 				GCC_UNROLL_LOOPS = YES;
 				HEADER_SEARCH_PATHS = (
@@ -1356,6 +1383,7 @@
 		AD9A74E01CCD29B900615C78 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_USE_OPTIMIZATION_PROFILE = YES;
 				GCC_OPTIMIZATION_LEVEL = fast;
 				GCC_STRICT_ALIASING = YES;
 				GCC_UNROLL_LOOPS = YES;

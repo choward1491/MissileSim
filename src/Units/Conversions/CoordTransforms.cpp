@@ -21,10 +21,10 @@ double NormalComputation( const double & latitude ){
 }
 
 ENU  CoordTransforms::NEDtoENU( const NED & vec ){
-    return ops::equal(vec[1], vec[0], -vec[2]);
+    return vec3(vec[1], vec[0], -vec[2]);
 }
 NED  CoordTransforms::ENUtoNED( const ENU & vec ){
-    return ops::equal(vec[1], vec[0], -vec[2]);
+    return vec3(vec[1], vec[0], -vec[2]);
 }
 
 ECEF CoordTransforms::convertLLAtoECEF( const LLA & coord ){
@@ -80,10 +80,10 @@ ECEF CoordTransforms::getFinalECEF( const LLA & startCoord, const ENU & relENU )
 }
 
 mat3 CoordTransforms::ENUtoECEF_Matrix( const LLA & startCoord ){
-    double lat = startCoord.latitude;
-    double lng = startCoord.longitude;
-    double clat = cos(lat);
-    double slat = sin(lat);
+    double lat   = startCoord.latitude;
+    double lng   = startCoord.longitude;
+    double clat  = cos(lat);
+    double slat  = sin(lat);
     double clong = cos(lng);
     double slong = sin(lng);
     mat3 out;
@@ -93,8 +93,8 @@ mat3 CoordTransforms::ENUtoECEF_Matrix( const LLA & startCoord ){
     return out;
 }
 mat3 CoordTransforms::ECEFtoENU_Matrix( const LLA & startCoord ){
-    double clat = cos(startCoord.getLatitudeInRadians());
-    double slat = sin(startCoord.getLatitudeInRadians());
+    double clat  = cos(startCoord.getLatitudeInRadians());
+    double slat  = sin(startCoord.getLatitudeInRadians());
     double clong = cos(startCoord.getLongitudeInRadians());
     double slong = sin(startCoord.getLongitudeInRadians());
     mat3 out;

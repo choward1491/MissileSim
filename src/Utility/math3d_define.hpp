@@ -1,8 +1,8 @@
 //
-//  IMU.hpp
+//  math3d_define.hpp
 //  MissileSim
 //
-//  Created by Christian J Howard on 5/2/16.
+//  Created by Christian J Howard on 9/24/16.
 //
 //  The MIT License (MIT)
 //    Copyright © 2016 Christian Howard. All rights reserved.
@@ -27,31 +27,13 @@
 //
 //
 
-#ifndef IMU_hpp
-#define IMU_hpp
+#ifndef math3d_define_h
+#define math3d_define_h
 
-#include "math3d_define.hpp"
-#include "DiscreteModel.hpp"
+#include "vec3.hpp"
+#include "Quaternion.hpp"
+typedef vec<3,double> vec3;
+typedef mat<3,3,double> mat3;
+typedef Quaternion<double> quat;
 
-class IMU : public DiscreteModel {
-public:
-    
-    IMU();
-    ~IMU();
-    virtual void initialize();
-    virtual void setupPrintData();
-    virtual void update();
-    void setAccelerationSource( vec3 & accel );
-    void setAngularVelocitySource( vec3 & angVel );
-    vec3 getAccel() const;
-    vec3 getAngVel() const;
-    
-    
-private:
-    vec3 * trueAccel;
-    vec3 * trueAngVel;
-    vec3 imu_accel;
-    vec3 imu_angvel;
-};
-
-#endif /* IMU_hpp */
+#endif /* math3d_define_h */

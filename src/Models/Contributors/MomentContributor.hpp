@@ -9,7 +9,7 @@
 #ifndef MomentContributor_h
 #define MomentContributor_h
 
-#include "vec3.hpp"
+#include "math3d_define.hpp"
 
 class MomentContributor {
 public:

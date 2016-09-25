@@ -1,6 +1,3 @@
-[submodule "dependencies/KrystalBall"]
-	path = dependencies/KrystalBall
-	url = https://github.com/choward1491/KrystalBall
 [submodule "dependencies/Bones"]
 	path = dependencies/Bones
 	url = https://github.com/choward1491/Bones
@@ -25,3 +22,6 @@
 [submodule "dependencies/TestAutomation"]
 	path = dependencies/TestAutomation
 	url = https://github.com/choward1491/TestAutomation
+[submodule "dependencies/KrystalBall"]
+	path = dependencies/KrystalBall
+	url = https://github.com/choward1491/KrystalBall

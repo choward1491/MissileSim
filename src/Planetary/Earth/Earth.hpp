@@ -13,12 +13,12 @@
 #include "vec3.hpp"
 
 namespace Earth {
-    namespace ops = vec3_ops;
+    typedef vec<3,double> vec3;
     
     // normal info
-    const double mass = 5.9723e24;      // in kg
+    const double mass = 5.9723e24;          // in kg
     const double omega_mag= 7.2921159e-5;   // in rads/s
-    const vec3 omega = ops::equal(0, 0, -omega_mag);
+    const vec3 omega(0, 0, -omega_mag);
     
     // orbital mechanics data
     const double e = 0.081819190842613;

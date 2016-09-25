@@ -15,6 +15,7 @@
 #include "Timer.hpp"
 #include "RungeKutta4.hpp"
 #include "ExplicitTrapezoidal.hpp"
+#include "BogackiShampine23.hpp"
 
 class MissileSim : public Simulator<MissileSim,RungeKutta4>{
 public:

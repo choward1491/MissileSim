@@ -14,7 +14,7 @@ MissileSim::MissileSim(){
     setSimHistoryPath(historyFile);
     state.printFrequency = 100;
     numMC = 1;
-    writeSimHistory = false;
+    writeSimHistory = true;
 }
 
 

@@ -9,10 +9,11 @@
 #ifndef ForceContributor_h
 #define ForceContributor_h
 
-#include "vec3.hpp"
+#include "math3d_define.hpp"
 
 class ForceContributor {
 public:
+    
     virtual vec3 getForce( double time ) = 0;
 };
 

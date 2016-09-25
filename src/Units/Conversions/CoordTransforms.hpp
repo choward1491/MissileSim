@@ -10,12 +10,11 @@
 #define CoordTransforms_hpp
 
 #include "LatLongAlt.hpp"
-#include "vec3.hpp"
+#include "math3d_define.hpp"
 typedef LatLongAlt LLA;
 typedef vec3 ECEF;
 typedef vec3 ENU;
 typedef vec3 NED;
-typedef la::FastMat<double, 3, 3> mat3;
 
 
 
