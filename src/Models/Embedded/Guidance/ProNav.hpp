@@ -1,8 +1,8 @@
 //
-//  IMU.hpp
+//  ProNav.hpp
 //  MissileSim
 //
-//  Created by Christian J Howard on 5/2/16.
+//  Created by Christian J Howard on 9/30/16.
 //
 //  The MIT License (MIT)
 //    Copyright © 2016 Christian Howard. All rights reserved.
@@ -27,31 +27,15 @@
 //
 //
 
-#ifndef IMU_hpp
-#define IMU_hpp
+#ifndef ProNav_h
+#define ProNav_h
 
 #include "math3d_define.hpp"
-#include "DiscreteModel.hpp"
 
-class IMU : public DiscreteModel {
-public:
-    
-    IMU();
-    ~IMU();
-    virtual void initialize();
-    virtual void setupPrintData();
-    virtual void update();
-    void setAccelerationSource( const vec3 & accel );
-    void setAngularVelocitySource( const vec3 & angVel );
-    vec3 getAccel() const;
-    vec3 getAngVel() const;
-    
-    
-private:
-    const vec3 * trueAccel;
-    const vec3 * trueAngVel;
-    vec3 imu_accel;
-    vec3 imu_angvel;
-};
+namespace pronav {
+    void computeCommandedAccel( vec3 & outAccelBody );
+    extern vec3 R, V;
+    extern double gain;
+}
 
-#endif /* IMU_hpp */
+#endif /* ProNav_h */

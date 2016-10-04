@@ -14,6 +14,15 @@
 MissileModel::MissileModel(){
     model_name = "missile";
     eom.setEOM_State(state);
+    eom.addForceContributor(motor);
+    
+    /*imu.setAccelerationSource(eom.getAccel());
+    imu.setAngularVelocitySource(eom.getAngularVel());
+    gps.setLatLongSource(eom.getCurrentCoord());
+    
+    a_commands.setMissile(*this);
+    eom.addForceContributor(a_commands);
+    eom.addMomentContributor(a_commands);*/
 }
 
 
@@ -31,11 +40,6 @@ void MissileModel::initialize(){
     massprops.initialize();
     eom.setMass(massprops.mass);
     eom.setInertia(massprops.I, massprops.Iinv);
-    
-    // sensor init
-    //imu.setAccelerationSource(eom.accel);
-    //imu.setAngularVelocitySource(eom.omega);
-    //gps.setLatLongSource(eom.current_pos);
     
     // initial state condition
     state[0] = startECEF[0];
@@ -64,20 +68,21 @@ void MissileModel::addSubModels( MissileSim & msim ){
 
 
 void MissileModel::update(){
+    
     eom.updateComponents();
-    EulerAngles angles = eom.q.getEulerAngles();
+    /*EulerAngles angles = eom.getAttitude().getEulerAngles();
     roll  = angles[0]* Constants::rad2deg;
     pitch = angles[1]* Constants::rad2deg;
     yaw   = angles[2]* Constants::rad2deg;
     P     = state[10]* Constants::rad2deg;
     Q     = state[11]* Constants::rad2deg;
-    R     = state[12]* Constants::rad2deg;
+    R     = state[12]* Constants::rad2deg;*/
 }
 
 void MissileModel::setupPrintData(){
-    simState->dataPrinter.addVariableToPrint(&eom.current_pos.latitude, "Latitude" );
-    simState->dataPrinter.addVariableToPrint(&eom.current_pos.longitude, "Longitude" );
-    simState->dataPrinter.addVariableToPrint(&eom.current_pos.altitude, "Altitude" );
+    simState->dataPrinter.addVariableToPrint(&eom.getCurrentCoord().latitude, "Latitude" );
+    simState->dataPrinter.addVariableToPrint(&eom.getCurrentCoord().longitude, "Longitude" );
+    simState->dataPrinter.addVariableToPrint(&eom.getCurrentCoord().altitude, "Altitude" );
     simState->dataPrinter.addVariableToPrint(&roll, "Roll" );
     simState->dataPrinter.addVariableToPrint(&pitch, "Pitch" );
     simState->dataPrinter.addVariableToPrint(&yaw, "Yaw" );
@@ -87,7 +92,11 @@ void MissileModel::setupPrintData(){
 }
 
 double MissileModel::getAltitude() const{
-    return eom.current_pos.altitude;
+    return eom.getCurrentCoord().altitude;
+}
+
+double MissileModel::getMass() const {
+    return massprops.mass;
 }
 
 
@@ -98,7 +107,7 @@ int MissileModel::numDims() const{
 
 void MissileModel::operator()( double time , ModelState & dqdt ){
     eom(time,dqdt);
-    //massprops.update_(time);
+    massprops.update_(time);
 }
 
 

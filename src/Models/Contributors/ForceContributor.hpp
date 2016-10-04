@@ -14,7 +14,8 @@
 class ForceContributor {
 public:
     
-    virtual vec3 getForce( double time ) = 0;
+    virtual void getForce( double time, vec3 & outForceBody ) = 0;
+    virtual void getLocation( double time, vec3 & locBody ) = 0;
 };
 
 #endif /* ForceContributor_h */

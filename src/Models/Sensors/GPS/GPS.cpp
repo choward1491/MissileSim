@@ -23,7 +23,7 @@ void GPS::setupPrintData(){
 void GPS::update(){
     gps_pos = *truePos;
 }
-void GPS::setLatLongSource( LatLongAlt & pos ){
+void GPS::setLatLongSource( const LatLongAlt & pos ){
     truePos = &pos;
 }
 LatLongAlt GPS::getPos() const{

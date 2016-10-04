@@ -20,7 +20,7 @@ public:
     
     
 protected:
-    template<class> friend class EquationsOfMotion;
+    friend class EquationsOfMotion;
     
     mat3 I;
     mat3 Iinv;

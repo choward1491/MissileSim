@@ -26,10 +26,10 @@ void IMU::update(){
     imu_accel = *trueAccel;
     imu_angvel = *trueAccel;
 }
-void IMU::setAccelerationSource( vec3 & accel ){
+void IMU::setAccelerationSource( const vec3 & accel ){
     trueAccel = &accel;
 }
-void IMU::setAngularVelocitySource( vec3 & angVel ){
+void IMU::setAngularVelocitySource( const vec3 & angVel ){
     trueAngVel = &angVel;
 }
 

@@ -43,12 +43,12 @@ public:
     virtual void initialize();
     virtual void setupPrintData();
     virtual void update();
-    void setLatLongSource( LatLongAlt & pos );
+    void setLatLongSource( const LatLongAlt & pos );
     LatLongAlt getPos() const;
     
     
 private:
-    LatLongAlt * truePos;
+    const LatLongAlt * truePos;
     LatLongAlt gps_pos;
     
 };

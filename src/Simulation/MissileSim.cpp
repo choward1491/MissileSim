@@ -12,9 +12,9 @@ MissileSim::MissileSim(){
     timer.start();
     std::string historyFile("/Users/christianjhoward/history.txt");
     setSimHistoryPath(historyFile);
-    state.printFrequency = 100;
+    state.printFrequency = 60;
     numMC = 1;
-    writeSimHistory = true;
+    writeSimHistory = false;
 }
 
 

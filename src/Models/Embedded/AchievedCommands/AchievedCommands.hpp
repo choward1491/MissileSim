@@ -1,8 +1,8 @@
 //
-//  IMU.hpp
+//  AchievedCommands.hpp
 //  MissileSim
 //
-//  Created by Christian J Howard on 5/2/16.
+//  Created by Christian J Howard on 9/30/16.
 //
 //  The MIT License (MIT)
 //    Copyright © 2016 Christian Howard. All rights reserved.
@@ -27,31 +27,29 @@
 //
 //
 
-#ifndef IMU_hpp
-#define IMU_hpp
+#ifndef AchievedCommands_hpp
+#define AchievedCommands_hpp
 
-#include "math3d_define.hpp"
-#include "DiscreteModel.hpp"
+#include <stdio.h>
+#include "ForceContributor.hpp"
+#include "MomentContributor.hpp"
+#include "LatLongAlt.hpp"
 
-class IMU : public DiscreteModel {
+class MissileModel;
+
+class AchievedCommands : public ForceContributor, public MomentContributor {
 public:
     
-    IMU();
-    ~IMU();
-    virtual void initialize();
-    virtual void setupPrintData();
-    virtual void update();
-    void setAccelerationSource( const vec3 & accel );
-    void setAngularVelocitySource( const vec3 & angVel );
-    vec3 getAccel() const;
-    vec3 getAngVel() const;
-    
+    AchievedCommands();
+    void setMissile( MissileModel & missile );
+    virtual void getForce( double time, vec3 & outForceBody );
+    virtual void getMoment( double time, vec3 & outMomentBody );
+    virtual void getLocation( double time, vec3 & locBody );
     
 private:
-    const vec3 * trueAccel;
-    const vec3 * trueAngVel;
-    vec3 imu_accel;
-    vec3 imu_angvel;
+    
+    MissileModel * missile;
+    
 };
 
-#endif /* IMU_hpp */
+#endif /* AchievedCommands_hpp */

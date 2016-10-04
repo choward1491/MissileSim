@@ -22,7 +22,6 @@ class ForceContributor;
 class MomentContributor;
 
 
-template<class Type>
 class EquationsOfMotion {
 public:
     
@@ -37,10 +36,16 @@ public:
     void setInertia( mat3 & I_, mat3 & Iinv_ );
     void setMass( double & mass );
     
+    const vec3 & getPos() const;
+    const vec3 & getVel() const;
+    const vec3 & getAccel() const;
+    const quat & getAttitude() const;
+    const vec3 & getAngularVel() const;
+    const LatLongAlt & getInitialCoord() const;
+    const LatLongAlt & getCurrentCoord() const;
+    
     
 protected:
-    friend class MissileModel;
-    friend class TargetModel;
     
     int numDims_;
     
@@ -59,13 +64,12 @@ protected:
     
     std::vector<ForceContributor*> forces;
     std::vector<MomentContributor*> moments;
-    void getTotalForce( double time, vec3 & total );
-    void getTotalMoment( double time, vec3 & total );
+    void getTotalForceAndMoments( double time, vec3 & totalForceBody, vec3 & totalMomentBody );
     
 };
 
 
-#include "EquationsOfMotionImpl.hpp"
+//#include "EquationsOfMotionImpl.hpp"
 
 
 #endif /* EquationsOfMotion_hpp */

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AD96341E1CD854B800AAB6D8 /* MissileEOM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD96341C1CD854B800AAB6D8 /* MissileEOM.cpp */; };
 		AD9634211CD862E300AAB6D8 /* IMU.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD96341F1CD862E300AAB6D8 /* IMU.cpp */; };
 		AD9634241CD8666C00AAB6D8 /* GPS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD9634221CD8666C00AAB6D8 /* GPS.cpp */; };
 		AD9A74E41CCD2BFA00615C78 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD9A74E31CCD2BFA00615C78 /* main.cpp */; };
@@ -18,12 +17,15 @@
 		AD9A74FD1CCD2C9A00615C78 /* CoordTransforms.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD9A74FB1CCD2C9A00615C78 /* CoordTransforms.cpp */; };
 		AD9A758F1CCD46BB00615C78 /* MissileSim.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD9A758D1CCD46BB00615C78 /* MissileSim.cpp */; };
 		AD9A75931CCD472800615C78 /* MissileModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD9A75911CCD472800615C78 /* MissileModel.cpp */; };
-		AD9A75A01CCD6DF600615C78 /* EquationsOfMotionImpl.hpp in Sources */ = {isa = PBXBuildFile; fileRef = AD9A759E1CCD6DF600615C78 /* EquationsOfMotionImpl.hpp */; };
+		AD9A75A01CCD6DF600615C78 /* EquationsOfMotionImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD9A759E1CCD6DF600615C78 /* EquationsOfMotionImpl.cpp */; };
 		AD9A75A61CCF257300615C78 /* TargetModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD9A75A41CCF257300615C78 /* TargetModel.cpp */; };
 		AD9A75AD1CCF29E600615C78 /* RocketMotor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD9A75AB1CCF29E600615C78 /* RocketMotor.cpp */; };
 		AD9A75B91CD526F700615C78 /* MassPropertiesImpl.hpp in Sources */ = {isa = PBXBuildFile; fileRef = AD9A75B71CD526F700615C78 /* MassPropertiesImpl.hpp */; };
 		AD9A75BD1CD6C9F400615C78 /* MissileMassProps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD9A75BB1CD6C9F400615C78 /* MissileMassProps.cpp */; };
 		ADA61A531D9677E5001881EE /* EulerAngles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADA61A4B1D9677E5001881EE /* EulerAngles.cpp */; };
+		ADA61A721D9F82DB001881EE /* ProNav.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADA61A711D9F82DB001881EE /* ProNav.cpp */; };
+		ADA61A761D9F8686001881EE /* AchievedCommands.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADA61A741D9F8686001881EE /* AchievedCommands.cpp */; };
+		ADA61A8D1DA1B318001881EE /* Seeker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADA61A8B1DA1B318001881EE /* Seeker.cpp */; };
 		ADB769731D924DD0006A4683 /* Constants.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADB769241D924DD0006A4683 /* Constants.cpp */; };
 		ADB769741D924DD0006A4683 /* DataPrinter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADB769271D924DD0006A4683 /* DataPrinter.cpp */; };
 		ADB769751D924DD0006A4683 /* DiscreteModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADB7692A1D924DD0006A4683 /* DiscreteModel.cpp */; };
@@ -34,7 +36,6 @@
 		ADB7697A1D924DD0006A4683 /* HeatEquationSim.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADB769381D924DD0006A4683 /* HeatEquationSim.cpp */; };
 		ADB7697B1D924DD0006A4683 /* HodgkinHuxleyNeuronModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADB7693B1D924DD0006A4683 /* HodgkinHuxleyNeuronModel.cpp */; };
 		ADB7697C1D924DD0006A4683 /* NeuronSim.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADB7693D1D924DD0006A4683 /* NeuronSim.cpp */; };
-		ADB7697D1D924DD0006A4683 /* PointBodyModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADB769411D924DD0006A4683 /* PointBodyModel.cpp */; };
 		ADB7697E1D924DD0006A4683 /* NonlinearModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADB769441D924DD0006A4683 /* NonlinearModel.cpp */; };
 		ADB7697F1D924DD0006A4683 /* Pendulum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADB769481D924DD0006A4683 /* Pendulum.cpp */; };
 		ADB769801D924DD0006A4683 /* PendulumSim.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADB7694A1D924DD0006A4683 /* PendulumSim.cpp */; };
@@ -76,8 +77,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		AD96341C1CD854B800AAB6D8 /* MissileEOM.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MissileEOM.cpp; path = ../../../src/Models/EquationsOfMotion/MissileEOM/MissileEOM.cpp; sourceTree = "<group>"; };
-		AD96341D1CD854B800AAB6D8 /* MissileEOM.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = MissileEOM.hpp; path = ../../../src/Models/EquationsOfMotion/MissileEOM/MissileEOM.hpp; sourceTree = "<group>"; };
 		AD96341F1CD862E300AAB6D8 /* IMU.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IMU.cpp; path = ../../../src/Models/Sensors/IMU/IMU.cpp; sourceTree = "<group>"; };
 		AD9634201CD862E300AAB6D8 /* IMU.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IMU.hpp; path = ../../../src/Models/Sensors/IMU/IMU.hpp; sourceTree = "<group>"; };
 		AD9634221CD8666C00AAB6D8 /* GPS.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GPS.cpp; path = ../../../src/Models/Sensors/GPS/GPS.cpp; sourceTree = "<group>"; };
@@ -98,7 +97,7 @@
 		AD9A758E1CCD46BB00615C78 /* MissileSim.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = MissileSim.hpp; path = ../../../src/Simulation/MissileSim.hpp; sourceTree = "<group>"; };
 		AD9A75911CCD472800615C78 /* MissileModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MissileModel.cpp; path = ../../../src/Models/Missile/MissileModel.cpp; sourceTree = "<group>"; };
 		AD9A75921CCD472800615C78 /* MissileModel.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = MissileModel.hpp; path = ../../../src/Models/Missile/MissileModel.hpp; sourceTree = "<group>"; };
-		AD9A759E1CCD6DF600615C78 /* EquationsOfMotionImpl.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = EquationsOfMotionImpl.hpp; path = ../../../src/Models/EquationsOfMotion/EquationsOfMotionImpl.hpp; sourceTree = "<group>"; };
+		AD9A759E1CCD6DF600615C78 /* EquationsOfMotionImpl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EquationsOfMotionImpl.cpp; path = ../../../src/Models/EquationsOfMotion/EquationsOfMotionImpl.cpp; sourceTree = "<group>"; };
 		AD9A759F1CCD6DF600615C78 /* EquationsOfMotion.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = EquationsOfMotion.hpp; path = ../../../src/Models/EquationsOfMotion/EquationsOfMotion.hpp; sourceTree = "<group>"; };
 		AD9A75A21CCD8BE700615C78 /* ForceContributor.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = ForceContributor.hpp; path = ../../../src/Models/Contributors/ForceContributor.hpp; sourceTree = "<group>"; };
 		AD9A75A31CCD8C5E00615C78 /* MomentContributor.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = MomentContributor.hpp; path = ../../../src/Models/Contributors/MomentContributor.hpp; sourceTree = "<group>"; };
@@ -124,6 +123,12 @@
 		ADA61A661D972265001881EE /* math_bundle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = math_bundle.hpp; path = ../../../dependencies/Geom3/src/math_bundle.hpp; sourceTree = "<group>"; };
 		ADA61A671D972265001881EE /* math_operators.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = math_operators.hpp; path = ../../../dependencies/Geom3/src/math_operators.hpp; sourceTree = "<group>"; };
 		ADA61A691D972E42001881EE /* MissileSim.profdata */ = {isa = PBXFileReference; lastKnownFileType = file; path = MissileSim.profdata; sourceTree = "<group>"; };
+		ADA61A701D9F821D001881EE /* ProNav.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = ProNav.hpp; path = ../../../src/Models/Embedded/Guidance/ProNav.hpp; sourceTree = "<group>"; };
+		ADA61A711D9F82DB001881EE /* ProNav.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ProNav.cpp; path = ../../../src/Models/Embedded/Guidance/ProNav.cpp; sourceTree = "<group>"; };
+		ADA61A741D9F8686001881EE /* AchievedCommands.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AchievedCommands.cpp; path = ../../../src/Models/Embedded/AchievedCommands/AchievedCommands.cpp; sourceTree = "<group>"; };
+		ADA61A751D9F8686001881EE /* AchievedCommands.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = AchievedCommands.hpp; path = ../../../src/Models/Embedded/AchievedCommands/AchievedCommands.hpp; sourceTree = "<group>"; };
+		ADA61A8B1DA1B318001881EE /* Seeker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Seeker.cpp; path = ../../../src/Models/Sensors/Seeker/Seeker.cpp; sourceTree = "<group>"; };
+		ADA61A8C1DA1B318001881EE /* Seeker.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Seeker.hpp; path = ../../../src/Models/Sensors/Seeker/Seeker.hpp; sourceTree = "<group>"; };
 		ADB769241D924DD0006A4683 /* Constants.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Constants.cpp; sourceTree = "<group>"; };
 		ADB769251D924DD0006A4683 /* Constants.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Constants.hpp; sourceTree = "<group>"; };
 		ADB769271D924DD0006A4683 /* DataPrinter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DataPrinter.cpp; sourceTree = "<group>"; };
@@ -144,9 +149,6 @@
 		ADB7693C1D924DD0006A4683 /* HodgkinHuxleyNeuronModel.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = HodgkinHuxleyNeuronModel.hpp; sourceTree = "<group>"; };
 		ADB7693D1D924DD0006A4683 /* NeuronSim.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NeuronSim.cpp; sourceTree = "<group>"; };
 		ADB7693E1D924DD0006A4683 /* NeuronSim.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NeuronSim.hpp; sourceTree = "<group>"; };
-		ADB769401D924DD0006A4683 /* NBodySim.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NBodySim.hpp; sourceTree = "<group>"; };
-		ADB769411D924DD0006A4683 /* PointBodyModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PointBodyModel.cpp; sourceTree = "<group>"; };
-		ADB769421D924DD0006A4683 /* PointBodyModel.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PointBodyModel.hpp; sourceTree = "<group>"; };
 		ADB769441D924DD0006A4683 /* NonlinearModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NonlinearModel.cpp; sourceTree = "<group>"; };
 		ADB769451D924DD0006A4683 /* NonlinearModel.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NonlinearModel.hpp; sourceTree = "<group>"; };
 		ADB769461D924DD0006A4683 /* NonlinearSim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NonlinearSim.h; sourceTree = "<group>"; };
@@ -287,15 +289,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AD96341B1CD8547F00AAB6D8 /* MissileEOM */ = {
-			isa = PBXGroup;
-			children = (
-				AD96341C1CD854B800AAB6D8 /* MissileEOM.cpp */,
-				AD96341D1CD854B800AAB6D8 /* MissileEOM.hpp */,
-			);
-			name = MissileEOM;
-			sourceTree = "<group>";
-		};
 		AD9A74CE1CCD29B900615C78 = {
 			isa = PBXGroup;
 			children = (
@@ -399,6 +392,7 @@
 		AD9A75901CCD46FD00615C78 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				ADA61A6C1D9F7652001881EE /* Designator */,
 				AD9A75A11CCD8BBC00615C78 /* Contributor */,
 				AD9A75A81CCF26B200615C78 /* MassProperties */,
 				AD9A759D1CCD6DBD00615C78 /* EquationsOfMotion */,
@@ -468,6 +462,8 @@
 		AD9A759A1CCD637200615C78 /* Guidance */ = {
 			isa = PBXGroup;
 			children = (
+				ADA61A6F1D9F8168001881EE /* Kappa */,
+				ADA61A6E1D9F815E001881EE /* ProNav */,
 			);
 			name = Guidance;
 			sourceTree = "<group>";
@@ -482,8 +478,7 @@
 		AD9A759D1CCD6DBD00615C78 /* EquationsOfMotion */ = {
 			isa = PBXGroup;
 			children = (
-				AD96341B1CD8547F00AAB6D8 /* MissileEOM */,
-				AD9A759E1CCD6DF600615C78 /* EquationsOfMotionImpl.hpp */,
+				AD9A759E1CCD6DF600615C78 /* EquationsOfMotionImpl.cpp */,
 				AD9A759F1CCD6DF600615C78 /* EquationsOfMotion.hpp */,
 			);
 			name = EquationsOfMotion;
@@ -518,6 +513,7 @@
 		AD9A75AA1CCF29BB00615C78 /* Embedded */ = {
 			isa = PBXGroup;
 			children = (
+				ADA61A731D9F85ED001881EE /* AchievedCommands */,
 				AD9A759A1CCD637200615C78 /* Guidance */,
 				AD9A75991CCD636800615C78 /* Autopilot */,
 			);
@@ -536,6 +532,8 @@
 		AD9A75AF1CCF29F500615C78 /* Seeker */ = {
 			isa = PBXGroup;
 			children = (
+				ADA61A8B1DA1B318001881EE /* Seeker.cpp */,
+				ADA61A8C1DA1B318001881EE /* Seeker.hpp */,
 			);
 			name = Seeker;
 			sourceTree = "<group>";
@@ -572,6 +570,38 @@
 				ADA61A691D972E42001881EE /* MissileSim.profdata */,
 			);
 			path = OptimizationProfiles;
+			sourceTree = "<group>";
+		};
+		ADA61A6C1D9F7652001881EE /* Designator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Designator;
+			sourceTree = "<group>";
+		};
+		ADA61A6E1D9F815E001881EE /* ProNav */ = {
+			isa = PBXGroup;
+			children = (
+				ADA61A701D9F821D001881EE /* ProNav.hpp */,
+				ADA61A711D9F82DB001881EE /* ProNav.cpp */,
+			);
+			name = ProNav;
+			sourceTree = "<group>";
+		};
+		ADA61A6F1D9F8168001881EE /* Kappa */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Kappa;
+			sourceTree = "<group>";
+		};
+		ADA61A731D9F85ED001881EE /* AchievedCommands */ = {
+			isa = PBXGroup;
+			children = (
+				ADA61A741D9F8686001881EE /* AchievedCommands.cpp */,
+				ADA61A751D9F8686001881EE /* AchievedCommands.hpp */,
+			);
+			name = AchievedCommands;
 			sourceTree = "<group>";
 		};
 		ADB769211D924B25006A4683 /* Dependencies */ = {
@@ -692,9 +722,6 @@
 		ADB7693F1D924DD0006A4683 /* NBodyProblem */ = {
 			isa = PBXGroup;
 			children = (
-				ADB769401D924DD0006A4683 /* NBodySim.hpp */,
-				ADB769411D924DD0006A4683 /* PointBodyModel.cpp */,
-				ADB769421D924DD0006A4683 /* PointBodyModel.hpp */,
 			);
 			path = NBodyProblem;
 			sourceTree = "<group>";
@@ -1226,6 +1253,7 @@
 				AD9A75B91CD526F700615C78 /* MassPropertiesImpl.hpp in Sources */,
 				AD9A75A61CCF257300615C78 /* TargetModel.cpp in Sources */,
 				AD9634241CD8666C00AAB6D8 /* GPS.cpp in Sources */,
+				ADA61A761D9F8686001881EE /* AchievedCommands.cpp in Sources */,
 				ADB76A151D924EA7006A4683 /* AVLTree_Tests.cpp in Sources */,
 				ADB769811D924DD0006A4683 /* ModelList.cpp in Sources */,
 				AD9A75931CCD472800615C78 /* MissileModel.cpp in Sources */,
@@ -1240,7 +1268,6 @@
 				ADB769E51D924E94006A4683 /* Parser.cpp in Sources */,
 				AD9A74F21CCD2C5100615C78 /* Earth.cpp in Sources */,
 				ADB7697F1D924DD0006A4683 /* Pendulum.cpp in Sources */,
-				AD96341E1CD854B800AAB6D8 /* MissileEOM.cpp in Sources */,
 				ADB7697C1D924DD0006A4683 /* NeuronSim.cpp in Sources */,
 				AD9634211CD862E300AAB6D8 /* IMU.cpp in Sources */,
 				ADB769851D924DD0006A4683 /* ExplicitEuler.cpp in Sources */,
@@ -1248,7 +1275,6 @@
 				ADB769821D924DD0006A4683 /* ModelState.cpp in Sources */,
 				AD9A758F1CCD46BB00615C78 /* MissileSim.cpp in Sources */,
 				ADB769871D924DD0006A4683 /* RKCashKarp.cpp in Sources */,
-				ADB7697D1D924DD0006A4683 /* PointBodyModel.cpp in Sources */,
 				ADB769E21D924E85006A4683 /* FileObject.cpp in Sources */,
 				ADB769861D924DD0006A4683 /* ExplicitTrapezoidal.cpp in Sources */,
 				ADB769781D924DD0006A4683 /* AdvectionEqnSim.cpp in Sources */,
@@ -1268,10 +1294,12 @@
 				AD9A74FA1CCD2C8600615C78 /* LatLongAlt.cpp in Sources */,
 				ADB7698B1D924DD0006A4683 /* SimTime.cpp in Sources */,
 				ADB769981D924E3A006A4683 /* Timer.cpp in Sources */,
-				AD9A75A01CCD6DF600615C78 /* EquationsOfMotionImpl.hpp in Sources */,
+				AD9A75A01CCD6DF600615C78 /* EquationsOfMotionImpl.cpp in Sources */,
+				ADA61A721D9F82DB001881EE /* ProNav.cpp in Sources */,
 				ADB7697B1D924DD0006A4683 /* HodgkinHuxleyNeuronModel.cpp in Sources */,
 				ADB769831D924DD0006A4683 /* BogackiShampine23.cpp in Sources */,
 				ADB769A31D924E57006A4683 /* Fraction.cpp in Sources */,
+				ADA61A8D1DA1B318001881EE /* Seeker.cpp in Sources */,
 				ADB7698C1D924DD0006A4683 /* Scheduler.cpp in Sources */,
 				ADB769751D924DD0006A4683 /* DiscreteModel.cpp in Sources */,
 				ADB7697E1D924DD0006A4683 /* NonlinearModel.cpp in Sources */,
@@ -1375,7 +1403,9 @@
 					"../../../Bones/src/**",
 					../../tests,
 					"../../../Spektr/src/**",
+					/usr/local/include,
 				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1392,7 +1422,9 @@
 					"../../../Bones/src/**",
 					../../tests,
 					"../../../Spektr/src/**",
+					/usr/local/include,
 				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

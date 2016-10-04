@@ -1,8 +1,8 @@
 //
-//  MissileEOM.hpp
+//  Seeker.hpp
 //  MissileSim
 //
-//  Created by Christian J Howard on 5/2/16.
+//  Created by Christian J Howard on 10/2/16.
 //
 //  The MIT License (MIT)
 //    Copyright © 2016 Christian Howard. All rights reserved.
@@ -27,24 +27,9 @@
 //
 //
 
-#ifndef MissileEOM_hpp
-#define MissileEOM_hpp
+#ifndef Seeker_hpp
+#define Seeker_hpp
 
-#include "EquationsOfMotion.hpp"
+#include <stdio.h>
 
-class MissileModel;
-
-class MissileEOM : public EquationsOfMotion<MissileEOM> {
-public:
-    MissileEOM();
-    
-private:
-    friend class EquationsOfMotion<MissileEOM>;
-    friend class MissileModel;
-    
-    void getExternalForceSum(double time, vec3 & forceSum );
-    void getExternalMomentSum(double time, vec3 & momentSum );
-    
-};
-
-#endif /* MissileEOM_hpp */
+#endif /* Seeker_hpp */

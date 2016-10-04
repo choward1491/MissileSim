@@ -11,11 +11,13 @@
 
 #include <stdio.h>
 #include "DynamicModel.hpp"
-#include "MissileEOM.hpp"
+#include "EquationsOfMotion.hpp"
 #include "EulerAngles.hpp"
 #include "MissileMassProps.hpp"
 #include "IMU.hpp"
 #include "GPS.hpp"
+#include "RocketMotor.hpp"
+#include "AchievedCommands.hpp"
 
 class MissileSim;
 class TargetModel;
@@ -109,24 +111,31 @@ public:
     
     void setTarget( const TargetModel & target ) const;
     double getAltitude() const;
-    
+    double getMass() const;
     
     
     
 private:
     double roll, pitch, yaw;
     double P, Q, R;
+    friend class AchievedCommands;
     
     // Target Missile will go after
     TargetModel * target;
     
     // Rigid Body Dynamics
-    MissileEOM eom;
+    EquationsOfMotion eom;
     MissileMassProps massprops;
     
     // Sensors
     IMU imu;
     GPS gps;
+    
+    // Other Hardware
+    RocketMotor motor;
+    
+    // Guidance Stuff
+    AchievedCommands a_commands;
 };
 
 

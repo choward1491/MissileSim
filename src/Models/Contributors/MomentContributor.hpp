@@ -13,7 +13,7 @@
 
 class MomentContributor {
 public:
-    virtual vec3 getMoment(double time) = 0;
+    virtual void getMoment(double time, vec3 & outMomentBody) = 0;
 };
 
 #endif /* MomentContributor_h */

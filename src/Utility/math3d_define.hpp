@@ -36,4 +36,9 @@ typedef vec<3,double> vec3;
 typedef mat<3,3,double> mat3;
 typedef Quaternion<double> quat;
 
+template<typename T>
+T sign( const T & x ){
+    return (x > static_cast<T>(0)) - (x < static_cast<T>(0));
+}
+
 #endif /* math3d_define_h */

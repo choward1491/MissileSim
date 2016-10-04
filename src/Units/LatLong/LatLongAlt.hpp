@@ -33,7 +33,7 @@ public:
     double altitude;    // in meters
     
     void print() const{
-        printf("(Lat,Long,Alt) = (%lf,%lf,%lf)\n",latitude,longitude,altitude);
+        printf("(Lat,Long,Alt) = (%0.10lf,%0.10lf,%0.10lf)\n",latitude,longitude,altitude);
     }
     
 };
