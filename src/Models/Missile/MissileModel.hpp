@@ -109,9 +109,13 @@ public:
     
     
     
-    void setTarget( const TargetModel & target ) const;
+    void setTarget( const TargetModel & target ) ;
     double getAltitude() const;
     double getMass() const;
+    const LatLongAlt & getCurrentCoord() const;
+    const vec3 & getPos() const;
+    const vec3 & getVel() const;
+    
     
     
     
@@ -121,7 +125,7 @@ private:
     friend class AchievedCommands;
     
     // Target Missile will go after
-    TargetModel * target;
+    const TargetModel * target;
     
     // Rigid Body Dynamics
     EquationsOfMotion eom;

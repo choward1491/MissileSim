@@ -13,27 +13,32 @@ MissileSim::MissileSim(){
     std::string historyFile("/Users/christianjhoward/history.txt");
     setSimHistoryPath(historyFile);
     state.printFrequency = 60;
-    numMC = 1;
-    writeSimHistory = false;
+    numMC = 100;
+    writeSimHistory = true;
 }
 
 
 void MissileSim::_linkModelsToSim( SimState & state ){
     addDiscrete(&tstep, 1000);
     addDynamics(&missile);
+    addDynamics(&target);
     missile.addSubModels(*this);
 }
 
 void MissileSim::_connectModelsTogether(){
-    
+    missile.setTarget(target);
+    target.setMissile(missile);
 }
 
 bool MissileSim::_finishedSimulation( SimState & state ) const{
-    //return missile.getAltitude() <= 0.0;
-    return getTime() > 3600;
+    return missile.getAltitude() <= 0.0;
 }
 void MissileSim::_finalizeMonteCarloRun(){
     printf("Finished #%i Monte Carlo run!\n",static_cast<int>(getCompletedMC()));
+    vec3 delta = missile.getPos()-target.getPos();
+    delta[2] = 0;
+    double miss = delta.magnitude();
+    printf("Miss(%i) = %lf\n",static_cast<int>(getCompletedMC()),miss);
 }
 void MissileSim::_finalize(){
     printf("Finished!\n");

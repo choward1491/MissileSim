@@ -16,25 +16,28 @@ MissileModel::MissileModel(){
     eom.setEOM_State(state);
     eom.addForceContributor(motor);
     
-    /*imu.setAccelerationSource(eom.getAccel());
+    /*
+    imu.setAccelerationSource(eom.getAccel());
     imu.setAngularVelocitySource(eom.getAngularVel());
     gps.setLatLongSource(eom.getCurrentCoord());
+     */
     
     a_commands.setMissile(*this);
     eom.addForceContributor(a_commands);
-    eom.addMomentContributor(a_commands);*/
+    eom.addMomentContributor(a_commands);
 }
 
 
 void MissileModel::initialize(){
     
     // init pos, velocity, attitude
-    LatLongAlt start(0,0,10000);
+    LatLongAlt start(0,0,generator->rand()*8000+1000);
     eom.setInitialLatLong(start);
     vec3 startECEF = transforms::convertLLAtoECEF(start);
-    vec3 velENU(0, 0, 0);
+    vec3 velENU(0, generator->rand()*100 + 30, 0);
     vec3 velECEF = transforms::ENUtoECEF_Matrix(start)*velENU;
-    quat q0(-Constants::pi/6.0, vec3(0.0, 0, 1.0) );
+    quat q0(0.0, vec3(0.0, 0, 1.0) );
+    //quat q0(-Constants::pi/6.0, vec3(0.0, 0, 1.0) );
     
     // init rigid body
     massprops.initialize();
@@ -54,11 +57,9 @@ void MissileModel::initialize(){
     state[9] = q0[3];
     state[10] = 0;
     state[11] = 0;
-    state[12] = 0.174532925199433;
+    state[12] = 0;
+    //state[12] = 0.174532925199433;
     
-    // initialize auxilary variables based
-    // on initialized states
-    update();
 }
 
 void MissileModel::addSubModels( MissileSim & msim ){
@@ -99,9 +100,22 @@ double MissileModel::getMass() const {
     return massprops.mass;
 }
 
+const LatLongAlt & MissileModel::getCurrentCoord() const {
+    return eom.getCurrentCoord();
+}
+const vec3 & MissileModel::getPos() const {
+    return eom.getPos();
+}
+const vec3 & MissileModel::getVel() const {
+    return eom.getVel();
+}
 
 int MissileModel::numDims() const{
     return eom.numDims();
+}
+
+void MissileModel::setTarget(const TargetModel & target_){
+    target = &target_;
 }
 
 

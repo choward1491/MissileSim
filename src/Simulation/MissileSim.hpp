@@ -12,12 +12,14 @@
 #include <stdio.h>
 #include "Simulator.hpp"
 #include "MissileModel.hpp"
+#include "TargetModel.hpp"
 #include "Timer.hpp"
 #include "RungeKutta4.hpp"
 #include "ExplicitTrapezoidal.hpp"
 #include "BogackiShampine23.hpp"
+#include "RKCashKarp.hpp"
 
-class MissileSim : public Simulator<MissileSim,RungeKutta4>{
+class MissileSim : public Simulator<MissileSim,ExplicitTrapezoidal>{
 public:
     
     MissileSim();
@@ -33,6 +35,7 @@ private:
     Timer timer;
     TimeStep tstep;
     MissileModel missile;
+    TargetModel target;
     
 };
 

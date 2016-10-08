@@ -35,6 +35,7 @@ public:
     void updateComponents();
     void setInertia( mat3 & I_, mat3 & Iinv_ );
     void setMass( double & mass );
+    void useGravity( bool yesOrNo );
     
     const vec3 & getPos() const;
     const vec3 & getVel() const;
@@ -48,6 +49,7 @@ public:
 protected:
     
     int numDims_;
+    bool useGravity_;
     
     vec3 pos;
     vec3 vel;

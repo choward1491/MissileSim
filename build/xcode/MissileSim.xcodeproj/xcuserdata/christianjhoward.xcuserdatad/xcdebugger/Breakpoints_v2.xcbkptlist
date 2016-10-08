@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../src/Models/EquationsOfMotion/EquationsOfMotionImpl.cpp"
-            timestampString = "497043393.340938"
+            timestampString = "497337495.452458"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
             landmarkName = "EOM::operator()(double t, ModelState &amp; dudt )"
             landmarkType = "7">
          </BreakpointContent>
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../dependencies/KrystalBall/src/NumericIntegration/ButcherIntegrator/ButcherIntegrator.cpp"
-            timestampString = "497143332.029582"
+            timestampString = "497423487.331567"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "219"
-            endingLineNumber = "219"
+            startingLineNumber = "218"
+            endingLineNumber = "218"
             landmarkName = "ButcherIntegrator::nominalIntegration( double time, double dt , double* inOutState, DiffeqList &amp; list )"
             landmarkType = "7">
          </BreakpointContent>
@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../dependencies/KrystalBall/src/NumericIntegration/ButcherIntegrator/ButcherIntegrator.cpp"
-            timestampString = "497143332.029582"
+            timestampString = "497423487.331567"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "225"
-            endingLineNumber = "225"
+            startingLineNumber = "224"
+            endingLineNumber = "224"
             landmarkName = "ButcherIntegrator::nominalIntegration( double time, double dt , double* inOutState, DiffeqList &amp; list )"
             landmarkType = "7">
          </BreakpointContent>
@@ -106,57 +106,57 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../dependencies/KrystalBall/src/NumericIntegration/ButcherIntegrator/ButcherIntegrator.cpp"
-            timestampString = "497143332.029582"
+            timestampString = "497423487.331567"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "239"
+            endingLineNumber = "239">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../dependencies/KrystalBall/src/NumericIntegration/ButcherIntegrator/ButcherIntegrator.cpp"
+            timestampString = "497423487.331567"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "190"
+            endingLineNumber = "190"
+            landmarkName = "ButcherIntegrator::nominalIntegration( double time, double dt , double* inOutState, DiffeqList &amp; list )"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../dependencies/KrystalBall/src/NumericIntegration/ButcherIntegrator/ButcherIntegrator.cpp"
+            timestampString = "497423487.331567"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "200"
+            endingLineNumber = "200"
+            landmarkName = "ButcherIntegrator::nominalIntegration( double time, double dt , double* inOutState, DiffeqList &amp; list )"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../dependencies/KrystalBall/src/NumericIntegration/ButcherIntegrator/ButcherIntegrator.cpp"
+            timestampString = "497423487.331567"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "240"
-            endingLineNumber = "240">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../dependencies/KrystalBall/src/NumericIntegration/ButcherIntegrator/ButcherIntegrator.cpp"
-            timestampString = "497143332.029582"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "191"
-            endingLineNumber = "191"
-            landmarkName = "ButcherIntegrator::nominalIntegration( double time, double dt , double* inOutState, DiffeqList &amp; list )"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../dependencies/KrystalBall/src/NumericIntegration/ButcherIntegrator/ButcherIntegrator.cpp"
-            timestampString = "497143332.029582"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "201"
-            endingLineNumber = "201"
-            landmarkName = "ButcherIntegrator::nominalIntegration( double time, double dt , double* inOutState, DiffeqList &amp; list )"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../dependencies/KrystalBall/src/NumericIntegration/ButcherIntegrator/ButcherIntegrator.cpp"
-            timestampString = "497143332.029582"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "241"
-            endingLineNumber = "241"
+            endingLineNumber = "240"
             landmarkName = "ButcherIntegrator::integrate( double time, double dt , double* inOutState, DiffeqList &amp; list)"
             landmarkType = "7">
          </BreakpointContent>
@@ -168,11 +168,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../src/Models/Missile/MissileModel.cpp"
-            timestampString = "497244960.336889"
+            timestampString = "497336832.501992"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
             landmarkName = "MissileModel::initialize()"
             landmarkType = "7">
          </BreakpointContent>
@@ -184,11 +184,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../src/Simulation/MissileSim.cpp"
-            timestampString = "497167046.914132"
+            timestampString = "497335887.23701"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
             landmarkName = "MissileSim::_finishedSimulation( SimState &amp; state )"
             landmarkType = "7">
          </BreakpointContent>
@@ -200,11 +200,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../src/Models/Missile/MissileModel.cpp"
-            timestampString = "497244960.336889"
+            timestampString = "497506929.863006"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
             landmarkName = "MissileModel::operator()( double time , ModelState &amp; dqdt )"
             landmarkType = "7">
          </BreakpointContent>
@@ -216,11 +216,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../src/Models/Missile/MissileModel.cpp"
-            timestampString = "497244960.336889"
+            timestampString = "497506929.863006"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
             landmarkName = "MissileModel::update()"
             landmarkType = "7">
          </BreakpointContent>
@@ -232,11 +232,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../src/Models/EquationsOfMotion/EquationsOfMotionImpl.cpp"
-            timestampString = "497141185.901042"
+            timestampString = "497337495.452458"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "108"
-            endingLineNumber = "108"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
             landmarkName = "EOM::operator()(double t, ModelState &amp; dudt )"
             landmarkType = "7">
          </BreakpointContent>
@@ -248,11 +248,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../src/Models/EquationsOfMotion/EquationsOfMotionImpl.cpp"
-            timestampString = "497245888.822181"
+            timestampString = "497337495.452458"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "131"
-            endingLineNumber = "131"
+            startingLineNumber = "137"
+            endingLineNumber = "137"
             landmarkName = "EOM::operator()(double t, ModelState &amp; dudt )"
             landmarkType = "7">
          </BreakpointContent>
@@ -264,11 +264,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../src/Models/EquationsOfMotion/EquationsOfMotionImpl.cpp"
-            timestampString = "497245888.822181"
+            timestampString = "497337495.452458"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "122"
-            endingLineNumber = "122"
+            startingLineNumber = "128"
+            endingLineNumber = "128"
             landmarkName = "EOM::operator()(double t, ModelState &amp; dudt )"
             landmarkType = "7">
          </BreakpointContent>
@@ -280,11 +280,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../dependencies/KrystalBall/src/NumericIntegration/ButcherIntegrator/ButcherIntegrator.cpp"
-            timestampString = "497143332.029582"
+            timestampString = "497423487.331567"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "209"
-            endingLineNumber = "209"
+            startingLineNumber = "208"
+            endingLineNumber = "208"
             landmarkName = "ButcherIntegrator::nominalIntegration( double time, double dt , double* inOutState, DiffeqList &amp; list )"
             landmarkType = "7">
          </BreakpointContent>
@@ -296,11 +296,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../src/Models/EquationsOfMotion/EquationsOfMotionImpl.cpp"
-            timestampString = "497245888.822181"
+            timestampString = "497337495.452458"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "156"
-            endingLineNumber = "156"
+            startingLineNumber = "162"
+            endingLineNumber = "162"
             landmarkName = "EOM::operator()(double t, ModelState &amp; dudt )"
             landmarkType = "7">
          </BreakpointContent>
@@ -308,15 +308,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../dependencies/KrystalBall/src/NumericIntegration/ButcherIntegrator/ButcherIntegrator.cpp"
-            timestampString = "497142839.935036"
+            timestampString = "497423487.331567"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "176"
-            endingLineNumber = "176"
+            startingLineNumber = "175"
+            endingLineNumber = "175"
             landmarkName = "ButcherIntegrator::adaptiveIntegration( double time, double dt , double* inOutState, DiffeqList &amp; list )"
             landmarkType = "7">
          </BreakpointContent>
@@ -328,12 +328,92 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../dependencies/KrystalBall/src/NumericIntegration/ButcherIntegrator/ButcherIntegrator.cpp"
-            timestampString = "497143332.029582"
+            timestampString = "497423487.331567"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "234"
-            endingLineNumber = "234"
+            startingLineNumber = "233"
+            endingLineNumber = "233"
             landmarkName = "ButcherIntegrator::nominalIntegration( double time, double dt , double* inOutState, DiffeqList &amp; list )"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../dependencies/KrystalBall/src/Simulator/Simulator_Impl.hpp"
+            timestampString = "497336017.156692"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "initializeModels()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../src/Models/EquationsOfMotion/EquationsOfMotionImpl.cpp"
+            timestampString = "497418486.35194"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "EOM::updateComponents()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../src/Models/Embedded/AchievedCommands/AchievedCommands.cpp"
+            timestampString = "497418618.477211"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "AchievedCommands::getForce( double time, vec3 &amp; outForceBody )"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../dependencies/KrystalBall/src/NumericIntegration/ButcherIntegrator/ButcherIntegrator.cpp"
+            timestampString = "497423487.331567"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "152"
+            endingLineNumber = "152"
+            landmarkName = "ButcherIntegrator::adaptiveIntegration( double time, double dt , double* inOutState, DiffeqList &amp; list )"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../src/Simulation/MissileSim.cpp"
+            timestampString = "497508920.139179"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "MissileSim::_linkModelsToSim( SimState &amp; state )"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -35,7 +35,7 @@ void EOM::addMomentContributor( MomentContributor & moment ){
 }
 
 HEADER
-EOM::EquationsOfMotion():initial_pos(){
+EOM::EquationsOfMotion():initial_pos(),useGravity_(true){
     numDims_ = 4 + 3*3;
 }
 
@@ -104,6 +104,11 @@ void EOM::updateComponents(){
 }
 
 HEADER
+void EOM::useGravity( bool yesOrNo ) {
+    useGravity_ = yesOrNo;
+}
+
+HEADER
 void EOM::operator()(double t, ModelState & dudt ){
     
     vec3 totAccelBody, totAccelENU, totAccelECEF, totMomentBody;
@@ -112,7 +117,8 @@ void EOM::operator()(double t, ModelState & dudt ){
     getTotalForceAndMoments( t, totAccelBody, totMomentBody );
     
     // velocity derivative
-    double g = Earth::gravity::obtainGravityWithCoordinate(current_pos);
+    double g = 0;
+    if( useGravity_ ){ g = Earth::gravity::obtainGravityWithCoordinate(current_pos); }
     vec3 gravity(0, 0, g);              // in NED frame
     double m = (*mass);
     totAccelBody[0] /= m; totAccelBody[1] /= m; totAccelBody[2] /= m;

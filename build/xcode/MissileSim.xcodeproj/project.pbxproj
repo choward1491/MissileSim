@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD8800911DA4B86900BB1572 /* TargetMassProps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD88008F1DA4B86900BB1572 /* TargetMassProps.cpp */; };
+		AD8800961DA7585100BB1572 /* AMP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD8800941DA7585100BB1572 /* AMP.cpp */; };
 		AD9634211CD862E300AAB6D8 /* IMU.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD96341F1CD862E300AAB6D8 /* IMU.cpp */; };
 		AD9634241CD8666C00AAB6D8 /* GPS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD9634221CD8666C00AAB6D8 /* GPS.cpp */; };
 		AD9A74E41CCD2BFA00615C78 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD9A74E31CCD2BFA00615C78 /* main.cpp */; };
@@ -77,6 +79,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AD88008F1DA4B86900BB1572 /* TargetMassProps.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TargetMassProps.cpp; path = ../../../src/Models/MassProperties/TargetMassProps.cpp; sourceTree = "<group>"; };
+		AD8800901DA4B86900BB1572 /* TargetMassProps.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = TargetMassProps.hpp; path = ../../../src/Models/MassProperties/TargetMassProps.hpp; sourceTree = "<group>"; };
+		AD8800941DA7585100BB1572 /* AMP.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AMP.cpp; path = ../../../src/Models/Embedded/Guidance/AMP.cpp; sourceTree = "<group>"; };
+		AD8800951DA7585100BB1572 /* AMP.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = AMP.hpp; path = ../../../src/Models/Embedded/Guidance/AMP.hpp; sourceTree = "<group>"; };
 		AD96341F1CD862E300AAB6D8 /* IMU.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IMU.cpp; path = ../../../src/Models/Sensors/IMU/IMU.cpp; sourceTree = "<group>"; };
 		AD9634201CD862E300AAB6D8 /* IMU.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IMU.hpp; path = ../../../src/Models/Sensors/IMU/IMU.hpp; sourceTree = "<group>"; };
 		AD9634221CD8666C00AAB6D8 /* GPS.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GPS.cpp; path = ../../../src/Models/Sensors/GPS/GPS.cpp; sourceTree = "<group>"; };
@@ -289,6 +295,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD88008E1DA4B84500BB1572 /* TargetMassProps */ = {
+			isa = PBXGroup;
+			children = (
+				AD88008F1DA4B86900BB1572 /* TargetMassProps.cpp */,
+				AD8800901DA4B86900BB1572 /* TargetMassProps.hpp */,
+			);
+			name = TargetMassProps;
+			sourceTree = "<group>";
+		};
+		AD8800921DA4BD8000BB1572 /* Brain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Brain;
+			sourceTree = "<group>";
+		};
+		AD8800931DA757EA00BB1572 /* AMP */ = {
+			isa = PBXGroup;
+			children = (
+				AD8800941DA7585100BB1572 /* AMP.cpp */,
+				AD8800951DA7585100BB1572 /* AMP.hpp */,
+			);
+			name = AMP;
+			sourceTree = "<group>";
+		};
 		AD9A74CE1CCD29B900615C78 = {
 			isa = PBXGroup;
 			children = (
@@ -427,6 +458,7 @@
 		AD9A75961CCD479600615C78 /* Target */ = {
 			isa = PBXGroup;
 			children = (
+				AD8800921DA4BD8000BB1572 /* Brain */,
 				AD9A75A41CCF257300615C78 /* TargetModel.cpp */,
 				AD9A75A51CCF257300615C78 /* TargetModel.hpp */,
 			);
@@ -462,6 +494,7 @@
 		AD9A759A1CCD637200615C78 /* Guidance */ = {
 			isa = PBXGroup;
 			children = (
+				AD8800931DA757EA00BB1572 /* AMP */,
 				ADA61A6F1D9F8168001881EE /* Kappa */,
 				ADA61A6E1D9F815E001881EE /* ProNav */,
 			);
@@ -496,6 +529,7 @@
 		AD9A75A81CCF26B200615C78 /* MassProperties */ = {
 			isa = PBXGroup;
 			children = (
+				AD88008E1DA4B84500BB1572 /* TargetMassProps */,
 				AD9A75BA1CD6C9B900615C78 /* MissileMassProps */,
 				AD9A75B71CD526F700615C78 /* MassPropertiesImpl.hpp */,
 				AD9A75B81CD526F700615C78 /* MassProperties.hpp */,
@@ -1250,6 +1284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD8800961DA7585100BB1572 /* AMP.cpp in Sources */,
 				AD9A75B91CD526F700615C78 /* MassPropertiesImpl.hpp in Sources */,
 				AD9A75A61CCF257300615C78 /* TargetModel.cpp in Sources */,
 				AD9634241CD8666C00AAB6D8 /* GPS.cpp in Sources */,
@@ -1261,6 +1296,7 @@
 				ADB7699C1D924E49006A4683 /* TestAutomator.cpp in Sources */,
 				AD9A74FD1CCD2C9A00615C78 /* CoordTransforms.cpp in Sources */,
 				AD9A74E41CCD2BFA00615C78 /* main.cpp in Sources */,
+				AD8800911DA4B86900BB1572 /* TargetMassProps.cpp in Sources */,
 				ADB769731D924DD0006A4683 /* Constants.cpp in Sources */,
 				ADB769771D924DD0006A4683 /* AdvectionEqn.cpp in Sources */,
 				AD9A74EF1CCD2C4400615C78 /* Gravity84.cpp in Sources */,
