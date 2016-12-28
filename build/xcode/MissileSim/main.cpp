@@ -11,8 +11,8 @@
 
 int main(int argc, const char * argv[]) {
 
-    MissileSim sim;
-    sim.runSim();
+    //MissileSim sim;
+    //sim.runSim();
     
     return 0;
 }

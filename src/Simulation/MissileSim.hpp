@@ -10,30 +10,30 @@
 #define MissileSim_hpp
 
 #include <stdio.h>
-#include "Simulator.hpp"
 #include "MissileModel.hpp"
 #include "TargetModel.hpp"
-#include "Timer.hpp"
-#include "RungeKutta4.hpp"
-#include "ExplicitTrapezoidal.hpp"
-#include "BogackiShampine23.hpp"
-#include "RKCashKarp.hpp"
+#include "uniform_sim.hpp"
+#include "runge_kutta4.hpp"
+#include "time_step.hpp"
 
-class MissileSim : public Simulator<MissileSim,ExplicitTrapezoidal>{
+typedef double num_type;
+
+class MissileSim : public sim::uniform<num_type, integrate::rk4 >{
 public:
     
     MissileSim();
     
-    void _linkModelsToSim( SimState & state );
-    void _connectModelsTogether();
-    bool _finishedSimulation( SimState & state ) const;
-    void _finalizeMonteCarloRun();
-    void _finalize();
+    bool isMonteCarloDone();
+    void linkModelsToSim();         // method to link models to sim
+    void connectModelsTogether();
+    bool finishedSimulation();      // method to return whether the sim has finished
+    void finalizeMonteCarloRun();   // method to finalize a monte carlo run
+    void finalize();
     
 private:
     
     Timer timer;
-    TimeStep tstep;
+    time_step<num_type> ts;
     MissileModel missile;
     TargetModel target;
     

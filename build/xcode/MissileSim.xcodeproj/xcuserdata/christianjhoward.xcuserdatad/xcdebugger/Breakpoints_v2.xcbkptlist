@@ -183,22 +183,6 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../../src/Simulation/MissileSim.cpp"
-            timestampString = "497335887.23701"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "MissileSim::_finishedSimulation( SimState &amp; state )"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "../../src/Models/Missile/MissileModel.cpp"
             timestampString = "497506929.863006"
             startingColumnNumber = "9223372036854775807"
@@ -398,22 +382,6 @@
             startingLineNumber = "152"
             endingLineNumber = "152"
             landmarkName = "ButcherIntegrator::adaptiveIntegration( double time, double dt , double* inOutState, DiffeqList &amp; list )"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../src/Simulation/MissileSim.cpp"
-            timestampString = "497508920.139179"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "MissileSim::_linkModelsToSim( SimState &amp; state )"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

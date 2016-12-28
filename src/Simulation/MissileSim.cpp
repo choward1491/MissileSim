@@ -10,39 +10,36 @@
 
 MissileSim::MissileSim(){
     timer.start();
-    std::string historyFile("/Users/christianjhoward/history.txt");
-    setSimHistoryPath(historyFile);
-    state.printFrequency = 60;
-    numMC = 100;
-    writeSimHistory = true;
+    this->setSimHistoryRate(10);
+    this->setSimHistoryPath("test_history.txt");
+    this->getIntegrator().setTolerance(1e-10);
 }
 
-
-void MissileSim::_linkModelsToSim( SimState & state ){
-    addDiscrete(&tstep, 1000);
-    addDynamics(&missile);
-    addDynamics(&target);
+bool MissileSim::isMonteCarloDone() {
+    return (this->getCompletedMC() == 10);
+}
+void MissileSim::linkModelsToSim(){
+    this->addDynamics(missile);
+    this->addDynamics(target);
     missile.addSubModels(*this);
+    this->addDiscrete(ts, 1000.0);
 }
-
-void MissileSim::_connectModelsTogether(){
+void MissileSim::connectModelsTogether() {
     missile.setTarget(target);
     target.setMissile(missile);
 }
-
-bool MissileSim::_finishedSimulation( SimState & state ) const{
+bool MissileSim::finishedSimulation(){
     return missile.getAltitude() <= 0.0;
 }
-void MissileSim::_finalizeMonteCarloRun(){
+void MissileSim::finalizeMonteCarloRun(){
     printf("Finished #%i Monte Carlo run!\n",static_cast<int>(getCompletedMC()));
     vec3 delta = missile.getPos()-target.getPos();
     delta[2] = 0;
     double miss = delta.magnitude();
     printf("Miss(%i) = %lf\n",static_cast<int>(getCompletedMC()),miss);
 }
-void MissileSim::_finalize(){
+void MissileSim::finalize(){
     printf("Finished!\n");
     timer.stop();
-    
     printf("Simulation complete after %lf seconds\n",timer.getDuration());
 }
